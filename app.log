@@ -1,0 +1,611 @@
+2026-07-01 17:14:57,906 - __main__ - INFO - ============================================================
+2026-07-01 17:14:57,941 - __main__ - INFO - ============================================================
+2026-07-01 17:14:59,525 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:14:59,532 - __main__ - INFO - ============================================================
+2026-07-01 17:14:59,534 - __main__ - INFO - ============================================================
+2026-07-01 17:14:59,536 - __main__ - INFO - ============================================================
+2026-07-01 17:14:59,540 - __main__ - INFO - ============================================================
+2026-07-01 17:14:59,601 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-01 17:14:59,601 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-01 17:14:59,616 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 17:15:00,919 - __main__ - INFO - ============================================================
+2026-07-01 17:15:00,923 - __main__ - INFO - ============================================================
+2026-07-01 17:15:02,269 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:15:02,271 - __main__ - INFO - ============================================================
+2026-07-01 17:15:02,272 - __main__ - INFO - ============================================================
+2026-07-01 17:15:02,274 - __main__ - INFO - ============================================================
+2026-07-01 17:15:02,278 - __main__ - INFO - ============================================================
+2026-07-01 17:15:02,293 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 17:15:02,297 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 17:20:22,309 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\traceback.py', reloading
+2026-07-01 17:20:22,652 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 17:20:23,866 - __main__ - INFO - ============================================================
+2026-07-01 17:20:23,869 - __main__ - INFO - ============================================================
+2026-07-01 17:20:25,330 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:20:25,334 - __main__ - INFO - ============================================================
+2026-07-01 17:20:25,336 - __main__ - INFO - ============================================================
+2026-07-01 17:20:25,339 - __main__ - INFO - ============================================================
+2026-07-01 17:20:25,345 - __main__ - INFO - ============================================================
+2026-07-01 17:20:25,366 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 17:20:25,377 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 17:22:31,202 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 17:22:31,205 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 17:22:31,762 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 17:22:35,345 - __main__ - INFO - ============================================================
+2026-07-01 17:22:35,346 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 17:22:35,346 - __main__ - INFO - ============================================================
+2026-07-01 17:22:35,347 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 17:22:40,160 - __main__ - INFO - Model loaded successfully!
+2026-07-01 17:22:40,160 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:22:40,161 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 17:22:40,163 - __main__ - INFO - Using default feature names
+2026-07-01 17:22:40,164 - __main__ - INFO - ============================================================
+2026-07-01 17:22:40,165 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 17:22:40,165 - __main__ - INFO - ============================================================
+2026-07-01 17:22:40,169 - __main__ - INFO - ============================================================
+2026-07-01 17:22:40,170 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 17:22:40,170 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 17:22:40,170 - __main__ - INFO - Debug mode: True
+2026-07-01 17:22:40,170 - __main__ - INFO - ============================================================
+2026-07-01 17:22:40,203 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 17:22:40,209 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 17:23:08,560 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 17:23:09,328 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 17:23:11,997 - __main__ - INFO - ============================================================
+2026-07-01 17:23:11,997 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 17:23:11,998 - __main__ - INFO - ============================================================
+2026-07-01 17:23:11,998 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 17:23:19,942 - __main__ - INFO - Model loaded successfully!
+2026-07-01 17:23:19,943 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:23:19,947 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 17:23:19,949 - __main__ - INFO - Using default feature names
+2026-07-01 17:23:19,949 - __main__ - INFO - ============================================================
+2026-07-01 17:23:19,951 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 17:23:19,952 - __main__ - INFO - ============================================================
+2026-07-01 17:23:19,972 - __main__ - INFO - ============================================================
+2026-07-01 17:23:19,973 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 17:23:19,974 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 17:23:19,975 - __main__ - INFO - Debug mode: True
+2026-07-01 17:23:19,975 - __main__ - INFO - ============================================================
+2026-07-01 17:23:20,037 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 17:23:20,046 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 17:33:11,174 - __main__ - INFO - ============================================================
+2026-07-01 17:33:11,177 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 17:33:11,179 - __main__ - INFO - ============================================================
+2026-07-01 17:33:11,186 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 17:33:19,562 - __main__ - INFO - Model loaded successfully!
+2026-07-01 17:33:19,562 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:33:19,563 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 17:33:19,565 - __main__ - INFO - Using default feature names
+2026-07-01 17:33:19,566 - __main__ - INFO - ============================================================
+2026-07-01 17:33:19,566 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 17:33:19,567 - __main__ - INFO - ============================================================
+2026-07-01 17:33:19,576 - __main__ - INFO - ============================================================
+2026-07-01 17:33:19,576 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 17:33:19,577 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 17:33:19,577 - __main__ - INFO - Debug mode: True
+2026-07-01 17:33:19,577 - __main__ - INFO - ============================================================
+2026-07-01 17:33:19,634 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-01 17:33:19,634 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-01 17:33:19,667 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 17:33:23,348 - __main__ - INFO - ============================================================
+2026-07-01 17:33:23,351 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 17:33:23,353 - __main__ - INFO - ============================================================
+2026-07-01 17:33:23,356 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 17:33:27,635 - __main__ - INFO - Model loaded successfully!
+2026-07-01 17:33:27,637 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:33:27,639 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 17:33:27,643 - __main__ - INFO - Using default feature names
+2026-07-01 17:33:27,645 - __main__ - INFO - ============================================================
+2026-07-01 17:33:27,648 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 17:33:27,650 - __main__ - INFO - ============================================================
+2026-07-01 17:33:27,686 - __main__ - INFO - ============================================================
+2026-07-01 17:33:27,687 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 17:33:27,689 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 17:33:27,691 - __main__ - INFO - Debug mode: True
+2026-07-01 17:33:27,692 - __main__ - INFO - ============================================================
+2026-07-01 17:33:27,827 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 17:33:27,847 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 17:35:51,348 - __main__ - INFO -  Home page accessed
+2026-07-01 17:35:51,401 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-01 17:35:51,431 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:35:51] "GET / HTTP/1.1" 200 -
+2026-07-01 17:35:52,206 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 17:35:55,326 - __main__ - INFO - ============================================================
+2026-07-01 17:35:55,329 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 17:35:55,333 - __main__ - INFO - ============================================================
+2026-07-01 17:35:55,337 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 17:36:06,423 - __main__ - INFO - Model loaded successfully!
+2026-07-01 17:36:06,427 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 17:36:06,430 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 17:36:06,433 - __main__ - INFO - Using default feature names
+2026-07-01 17:36:06,434 - __main__ - INFO - ============================================================
+2026-07-01 17:36:06,436 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 17:36:06,438 - __main__ - INFO - ============================================================
+2026-07-01 17:36:06,474 - __main__ - INFO - ============================================================
+2026-07-01 17:36:06,477 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 17:36:06,479 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 17:36:06,481 - __main__ - INFO - Debug mode: True
+2026-07-01 17:36:06,482 - __main__ - INFO - ============================================================
+2026-07-01 17:36:06,650 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 17:36:06,695 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 17:36:07,400 - __main__ - INFO -  Home page accessed
+2026-07-01 17:36:07,485 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:07] "GET / HTTP/1.1" 200 -
+2026-07-01 17:36:09,584 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:09,586 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "[36mGET /static/images/hero.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:09,593 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-01 17:36:09,609 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-01 17:36:09,628 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "GET /static/images/logo.png HTTP/1.1" 200 -
+2026-07-01 17:36:09,632 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "GET /static/images/hero.png HTTP/1.1" 200 -
+2026-07-01 17:36:09,690 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-01 17:36:09,691 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-01 17:36:09,728 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:09] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:17,977 - __main__ - INFO - Prediction form page accessed
+2026-07-01 17:36:18,079 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:18] "GET /predict HTTP/1.1" 200 -
+2026-07-01 17:36:18,117 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-01 17:36:18,128 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:18] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:18,132 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-01 17:36:36,794 - __main__ - INFO -  Home page accessed
+2026-07-01 17:36:36,800 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:36] "GET / HTTP/1.1" 200 -
+2026-07-01 17:36:36,860 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-01 17:36:36,863 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:36] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:36,866 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:36] "[36mGET /static/images/hero.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:36,870 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-01 17:36:40,897 - __main__ - INFO - About page accessed
+2026-07-01 17:36:40,973 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:40] "GET /about HTTP/1.1" 200 -
+2026-07-01 17:36:41,004 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-01 17:36:41,010 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:41] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 17:36:41,014 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:36:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-01 17:43:54,730 - __main__ - INFO -  Home page accessed
+2026-07-01 17:43:54,737 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:43:54] "GET / HTTP/1.1" 200 -
+2026-07-01 17:43:54,821 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:43:54] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 17:43:54,827 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:43:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-01 17:43:54,831 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:43:54] "[36mGET /static/images/hero.png HTTP/1.1[0m" 304 -
+2026-07-01 17:43:54,834 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 17:43:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-01 18:15:39,618 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy\\_typing\\__init__.py', reloading
+2026-07-01 18:15:39,974 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:15:41,166 - __main__ - INFO - ============================================================
+2026-07-01 18:15:41,166 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:15:41,167 - __main__ - INFO - ============================================================
+2026-07-01 18:15:41,167 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:15:42,496 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:15:42,496 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:15:42,497 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:15:42,497 - __main__ - INFO - Using default feature names
+2026-07-01 18:15:42,497 - __main__ - INFO - ============================================================
+2026-07-01 18:15:42,497 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:15:42,497 - __main__ - INFO - ============================================================
+2026-07-01 18:15:42,499 - __main__ - INFO - ============================================================
+2026-07-01 18:15:42,499 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:15:42,500 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:15:42,500 - __main__ - INFO - Debug mode: True
+2026-07-01 18:15:42,500 - __main__ - INFO - ============================================================
+2026-07-01 18:15:42,516 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:15:42,519 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:28:31,550 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:28:31,832 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:28:33,131 - __main__ - INFO - ============================================================
+2026-07-01 18:28:33,132 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:28:33,132 - __main__ - INFO - ============================================================
+2026-07-01 18:28:33,132 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:28:34,621 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:28:34,622 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:28:34,622 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:28:34,623 - __main__ - INFO - Using default feature names
+2026-07-01 18:28:34,623 - __main__ - INFO - ============================================================
+2026-07-01 18:28:34,624 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:28:34,624 - __main__ - INFO - ============================================================
+2026-07-01 18:28:34,627 - __main__ - INFO - ============================================================
+2026-07-01 18:28:34,628 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:28:34,628 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:28:34,628 - __main__ - INFO - Debug mode: True
+2026-07-01 18:28:34,628 - __main__ - INFO - ============================================================
+2026-07-01 18:28:34,643 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:28:34,646 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:28:36,805 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:28:37,112 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:28:38,382 - __main__ - INFO - ============================================================
+2026-07-01 18:28:38,383 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:28:38,383 - __main__ - INFO - ============================================================
+2026-07-01 18:28:38,384 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:28:39,722 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:28:39,722 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:28:39,723 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:28:39,723 - __main__ - INFO - Using default feature names
+2026-07-01 18:28:39,724 - __main__ - INFO - ============================================================
+2026-07-01 18:28:39,724 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:28:39,724 - __main__ - INFO - ============================================================
+2026-07-01 18:28:39,727 - __main__ - INFO - ============================================================
+2026-07-01 18:28:39,727 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:28:39,727 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:28:39,728 - __main__ - INFO - Debug mode: True
+2026-07-01 18:28:39,728 - __main__ - INFO - ============================================================
+2026-07-01 18:28:39,744 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:28:39,751 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:28:39,950 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:28:40,280 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:28:41,544 - __main__ - INFO - ============================================================
+2026-07-01 18:28:41,544 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:28:41,544 - __main__ - INFO - ============================================================
+2026-07-01 18:28:41,545 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:28:42,994 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:28:42,995 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:28:42,995 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:28:42,996 - __main__ - INFO - Using default feature names
+2026-07-01 18:28:42,996 - __main__ - INFO - ============================================================
+2026-07-01 18:28:42,996 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:28:42,997 - __main__ - INFO - ============================================================
+2026-07-01 18:28:43,001 - __main__ - INFO - ============================================================
+2026-07-01 18:28:43,001 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:28:43,001 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:28:43,001 - __main__ - INFO - Debug mode: True
+2026-07-01 18:28:43,002 - __main__ - INFO - ============================================================
+2026-07-01 18:28:43,019 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:28:43,023 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:28:44,224 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:28:44,520 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:28:45,842 - __main__ - INFO - ============================================================
+2026-07-01 18:28:45,842 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:28:45,842 - __main__ - INFO - ============================================================
+2026-07-01 18:28:45,843 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:28:47,309 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:28:47,309 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:28:47,310 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:28:47,310 - __main__ - INFO - Using default feature names
+2026-07-01 18:28:47,311 - __main__ - INFO - ============================================================
+2026-07-01 18:28:47,311 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:28:47,311 - __main__ - INFO - ============================================================
+2026-07-01 18:28:47,313 - __main__ - INFO - ============================================================
+2026-07-01 18:28:47,314 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:28:47,314 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:28:47,314 - __main__ - INFO - Debug mode: True
+2026-07-01 18:28:47,314 - __main__ - INFO - ============================================================
+2026-07-01 18:28:47,333 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:28:47,336 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:28:57,460 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\notebooks\\train_model.py', reloading
+2026-07-01 18:28:57,776 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:28:58,989 - __main__ - INFO - ============================================================
+2026-07-01 18:28:58,989 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:28:58,990 - __main__ - INFO - ============================================================
+2026-07-01 18:28:58,990 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:29:00,624 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:29:00,624 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:29:00,624 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:29:00,625 - __main__ - INFO - Using default feature names
+2026-07-01 18:29:00,625 - __main__ - INFO - ============================================================
+2026-07-01 18:29:00,625 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:29:00,625 - __main__ - INFO - ============================================================
+2026-07-01 18:29:00,628 - __main__ - INFO - ============================================================
+2026-07-01 18:29:00,629 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:29:00,629 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:29:00,629 - __main__ - INFO - Debug mode: True
+2026-07-01 18:29:00,629 - __main__ - INFO - ============================================================
+2026-07-01 18:29:00,648 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:29:00,651 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:32:04,219 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\traceback.py', reloading
+2026-07-01 18:32:04,566 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:32:06,093 - __main__ - INFO - ============================================================
+2026-07-01 18:32:06,093 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:32:06,094 - __main__ - INFO - ============================================================
+2026-07-01 18:32:06,094 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:32:07,748 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:32:07,749 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:32:07,749 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:32:07,750 - __main__ - INFO - Using default feature names
+2026-07-01 18:32:07,751 - __main__ - INFO - ============================================================
+2026-07-01 18:32:07,751 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:32:07,751 - __main__ - INFO - ============================================================
+2026-07-01 18:32:07,755 - __main__ - INFO - ============================================================
+2026-07-01 18:32:07,756 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:32:07,756 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:32:07,756 - __main__ - INFO - Debug mode: True
+2026-07-01 18:32:07,757 - __main__ - INFO - ============================================================
+2026-07-01 18:32:07,777 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:32:07,781 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:32:26,291 - __main__ - INFO - ============================================================
+2026-07-01 18:32:26,292 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:32:26,292 - __main__ - INFO - ============================================================
+2026-07-01 18:32:26,293 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:32:27,909 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:32:27,909 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:32:27,910 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:32:27,911 - __main__ - INFO - Using default feature names
+2026-07-01 18:32:27,911 - __main__ - INFO - ============================================================
+2026-07-01 18:32:27,912 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:32:27,912 - __main__ - INFO - ============================================================
+2026-07-01 18:32:27,914 - __main__ - INFO - ============================================================
+2026-07-01 18:32:27,915 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:32:27,915 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:32:27,916 - __main__ - INFO - Debug mode: True
+2026-07-01 18:32:27,916 - __main__ - INFO - ============================================================
+2026-07-01 18:32:27,920 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\encodings\\utf_16_le.py', reloading
+2026-07-01 18:32:27,953 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-01 18:32:27,953 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-01 18:32:27,966 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:32:28,253 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:32:29,243 - __main__ - INFO - ============================================================
+2026-07-01 18:32:29,244 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:32:29,244 - __main__ - INFO - ============================================================
+2026-07-01 18:32:29,244 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:32:29,467 - __main__ - INFO - ============================================================
+2026-07-01 18:32:29,467 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:32:29,468 - __main__ - INFO - ============================================================
+2026-07-01 18:32:29,468 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:32:30,772 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:32:30,773 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:32:30,773 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:32:30,774 - __main__ - INFO - Using default feature names
+2026-07-01 18:32:30,774 - __main__ - INFO - ============================================================
+2026-07-01 18:32:30,774 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:32:30,774 - __main__ - INFO - ============================================================
+2026-07-01 18:32:30,776 - __main__ - INFO - ============================================================
+2026-07-01 18:32:30,776 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:32:30,777 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:32:30,777 - __main__ - INFO - Debug mode: True
+2026-07-01 18:32:30,777 - __main__ - INFO - ============================================================
+2026-07-01 18:32:30,792 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:32:30,796 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:32:31,047 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:32:31,047 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:32:31,048 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:32:31,048 - __main__ - INFO - Using default feature names
+2026-07-01 18:32:31,048 - __main__ - INFO - ============================================================
+2026-07-01 18:32:31,049 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:32:31,049 - __main__ - INFO - ============================================================
+2026-07-01 18:32:31,052 - __main__ - INFO - ============================================================
+2026-07-01 18:32:31,052 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:32:31,052 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:32:31,052 - __main__ - INFO - Debug mode: True
+2026-07-01 18:32:31,053 - __main__ - INFO - ============================================================
+2026-07-01 18:32:31,070 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:32:31,074 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:33:57,197 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\rlcompleter.py', reloading
+2026-07-01 18:33:57,573 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:33:57,643 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:33:58,820 - __main__ - INFO - ============================================================
+2026-07-01 18:33:58,821 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:33:58,822 - __main__ - INFO - ============================================================
+2026-07-01 18:33:58,822 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:33:58,831 - __main__ - INFO - ============================================================
+2026-07-01 18:33:58,831 - __main__ - INFO - Loading Models and Artifacts
+2026-07-01 18:33:58,831 - __main__ - INFO - ============================================================
+2026-07-01 18:33:58,832 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:34:00,419 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:34:00,419 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:34:00,419 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:34:00,420 - __main__ - INFO - Using default feature names
+2026-07-01 18:34:00,420 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,420 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:34:00,420 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,422 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,423 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:34:00,423 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:34:00,423 - __main__ - INFO - Debug mode: True
+2026-07-01 18:34:00,423 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,424 - __main__ - INFO - Model loaded successfully!
+2026-07-01 18:34:00,425 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:34:00,425 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:34:00,426 - __main__ - INFO - Using default feature names
+2026-07-01 18:34:00,426 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,426 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:34:00,426 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,429 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,430 - __main__ - INFO - Starting Customer Churn Prediction Application
+2026-07-01 18:34:00,430 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:34:00,430 - __main__ - INFO - Debug mode: True
+2026-07-01 18:34:00,430 - __main__ - INFO - ============================================================
+2026-07-01 18:34:00,440 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:34:00,444 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:34:00,447 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:34:00,452 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:46:14,328 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:46:14,332 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:46:14,703 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:46:14,713 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:46:16,341 - __main__ - INFO - ============================================================
+2026-07-01 18:46:16,342 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:46:16,342 - __main__ - INFO - ============================================================
+2026-07-01 18:46:16,343 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:46:16,349 - __main__ - INFO - ============================================================
+2026-07-01 18:46:16,349 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:46:16,350 - __main__ - INFO - ============================================================
+2026-07-01 18:46:16,350 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:46:18,377 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:46:18,378 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:46:18,378 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:46:18,379 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:46:18,379 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:46:18,379 - __main__ - INFO - Using default feature names
+2026-07-01 18:46:18,379 - __main__ - INFO - ============================================================
+er_churn_prediction\artifacts\features.pkl
+2026-07-01 18:46:18,379 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:46:18,380 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,380 - __main__ - INFO - Using default feature names
+2026-07-01 18:46:18,380 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,380 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:46:18,380 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,385 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,385 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:46:18,386 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,386 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:46:18,386 - __main__ - INFO - Debug mode: True
+2026-07-01 18:46:18,386 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:46:18,386 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,387 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:46:18,387 - __main__ - INFO - Debug mode: True
+2026-07-01 18:46:18,387 - __main__ - INFO - ============================================================
+2026-07-01 18:46:18,410 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:46:18,413 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:46:18,416 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:46:18,418 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:59:02,437 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\models\\predict.py', reloading
+2026-07-01 18:59:02,796 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:59:02,800 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:59:04,070 - __main__ - INFO - ============================================================
+2026-07-01 18:59:04,070 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:59:04,070 - __main__ - INFO - ============================================================
+2026-07-01 18:59:04,071 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:59:04,071 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:59:04,071 - __main__ - INFO - ============================================================
+2026-07-01 18:59:04,071 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:59:05,572 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:59:05,573 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:59:05,573 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:59:05,574 - __main__ - INFO - Using default feature names
+2026-07-01 18:59:05,574 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,574 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:59:05,575 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,580 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,581 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:59:05,581 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:59:05,581 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:59:05,581 - __main__ - INFO - Debug mode: True
+2026-07-01 18:59:05,581 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:59:05,582 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,583 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:59:05,585 - __main__ - INFO - Using default feature names
+2026-07-01 18:59:05,585 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,586 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:59:05,586 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,590 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,590 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:59:05,591 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:59:05,592 - __main__ - INFO - Debug mode: True
+2026-07-01 18:59:05,593 - __main__ - INFO - ============================================================
+2026-07-01 18:59:05,611 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:59:05,616 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:59:05,617 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:59:05,621 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:59:38,555 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:59:38,918 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:59:40,222 - __main__ - INFO - ============================================================
+2026-07-01 18:59:40,222 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:59:40,222 - __main__ - INFO - ============================================================
+2026-07-01 18:59:40,223 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:59:40,229 - __main__ - INFO - ============================================================
+2026-07-01 18:59:40,230 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:59:40,230 - __main__ - INFO - ============================================================
+2026-07-01 18:59:40,230 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:59:41,670 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:59:41,671 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:59:41,672 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:59:41,673 - __main__ - INFO - Using default feature names
+2026-07-01 18:59:41,674 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,674 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:59:41,675 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,677 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,678 - __main__ - INFO - Starting RetainIQ - Custome2026-07-01 18:59:41,679 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:59:41,679 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:59:41,680 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:59:41,680 - __main__ - INFO - Debug mode: True
+2026-07-01 18:59:41,680 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,680 - __main__ - INFO - Using default feature names
+2026-07-01 18:59:41,681 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,681 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:59:41,681 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,684 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,685 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:59:41,685 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:59:41,685 - __main__ - INFO - Debug mode: True
+2026-07-01 18:59:41,686 - __main__ - INFO - ============================================================
+2026-07-01 18:59:41,702 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:59:41,706 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:59:41,707 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:59:41,710 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:59:45,336 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:59:45,338 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\customer_churn_prediction\\app.py', reloading
+2026-07-01 18:59:45,659 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:59:45,659 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 18:59:46,774 - __main__ - INFO - ============================================================
+2026-07-01 18:59:46,775 - __main__ - INFO - ============================================================
+2026-07-01 18:59:46,775 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:59:46,775 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 18:59:46,775 - __main__ - INFO - ============================================================
+2026-07-01 18:59:46,775 - __main__ - INFO - ============================================================
+2026-07-01 18:59:46,775 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:59:46,775 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 18:59:48,073 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:59:48,074 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:59:48,074 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:59:48,075 - __main__ - INFO - Using default feature names
+2026-07-01 18:59:48,075 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,075 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:59:48,075 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,077 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,077 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:59:48,078 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:59:48,078 - __main__ - INFO - Debug mode: True
+2026-07-01 18:59:48,078 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,084 - __main__ - INFO - Model loaded successfully
+2026-07-01 18:59:48,084 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 18:59:48,085 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 18:59:48,085 - __main__ - INFO - Using default feature names
+2026-07-01 18:59:48,085 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,086 - __main__ - INFO - Models Loaded: Model=True, Scaler=False
+2026-07-01 18:59:48,086 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,088 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,088 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 18:59:48,089 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 18:59:48,089 - __main__ - INFO - Debug mode: True
+2026-07-01 18:59:48,089 - __main__ - INFO - ============================================================
+2026-07-01 18:59:48,093 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:59:48,096 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 18:59:48,113 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 18:59:48,118 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 19:03:42,880 - __main__ - INFO - Home page accessed - RetainIQ
+2026-07-01 19:03:42,884 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-01 19:03:42,894 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:03:42] "GET / HTTP/1.1" 200 -
+2026-07-01 19:03:43,228 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 19:03:43,236 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 19:03:44,324 - __main__ - INFO - ============================================================
+2026-07-01 19:03:44,324 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-01 19:03:44,324 - __main__ - INFO - ============================================================
+2026-07-01 19:03:44,324 - __main__ - INFO - ============================================================
+2026-07-01 19:03:44,325 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\models\model.pkl
+2026-07-01 19:03:45,595 - __main__ - INFO - Model loaded successfully
+2026-07-01 19:03:45,596 - __main__ - INFO -    Model Type: RandomForestClassifier
+2026-07-01 19:03:45,596 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 19:03:45,596 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\customer_churn_prediction\artifacts\features.pkl
+2026-07-01 19:03:45,597 - __main__ - INFO - Using default feature names
+2026-07-01 19:03:45,597 - __main__ - INFO - =============================2026-07-01 19:03:45,597 - __main_2026-07-01 19:03:45,598 - __main__ - INFO - Models Loaded: Model=True, Sc2026-07-01 12026-07-01 19:03:45,599 - __main__ - INFO - ============================================================
+2026-07-01 19:03:45,599 - __main__ - INFO - ============================================================
+2026-07-01 19:03:45,602 - __main__ - INFO - ============================================================
+2026-07-01 19:03:45,603 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-01 19:03:45,603 - __main__ - INFO - Server will run on: http://localhost:5000
+=================
+2026-07-01 19:03:45,603 - __main__ - INFO - Debug mode: True
+- Customer Churn Prediction Application
+2026-07-01 19:03:45,604 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-01 19:03:45,604 - __main__ - INFO - ============================================================
+2026-07-01 19:03:45,604 - __main__ - INFO - Debug mode: True
+2026-07-01 19:03:45,604 - __main__ - INFO - ============================================================
+2026-07-01 19:03:45,620 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 19:03:45,621 - werkzeug - WARNING -  * Debugger is active!
+2026-07-01 19:03:45,623 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 19:03:45,624 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-01 19:03:45,796 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:03:45] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 19:03:45,796 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:03:45] "[36mGET /static/images/hero.png HTTP/1.1[0m" 304 -
+2026-07-01 19:03:45,815 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:03:45] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-01 19:03:45,828 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:03:45] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-01 19:04:03,770 - __main__ - INFO - About page accessed - RetainIQ
+2026-07-01 19:04:03,785 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:03] "GET /about HTTP/1.1" 200 -
+2026-07-01 19:04:03,797 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-01 19:04:03,799 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:03] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 19:04:03,801 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-01 19:04:08,115 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-01 19:04:08,123 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:08] "GET /predict HTTP/1.1" 200 -
+2026-07-01 19:04:08,135 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-01 19:04:08,138 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:08] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-01 19:04:08,140 - werkzeug - INFO - 127.0.0.1 - - [01/Jul/2026 19:04:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-01 19:32:59,939 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy\\_typing\\__init__.py', reloading
+2026-07-01 19:32:59,940 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\AppData\\Roaming\\Python\\Python314\\site-packages\\numpy\\_typing\\__init__.py', reloading
+2026-07-01 19:33:00,403 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-01 19:33:00,404 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)

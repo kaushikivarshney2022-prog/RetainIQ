@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Churn - RetainIQ</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="40">
+                <span class="fw-bold ms-2">RetainIQ</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for('predict') }}">Prediction</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="darkModeToggle" class="btn btn-outline-primary btn-sm ms-2" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Prediction Form -->
+    <section class="py-5" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="form-glass">
+                        <div class="text-center mb-4">
+                            <h1 class="gradient-text">Predict Customer Churn</h1>
+                            <p class="text-secondary">Fill in the customer details below to get a prediction</p>
+                        </div>
+
+                        {% if error %}
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <i class="fas fa-exclamation-circle me-2"></i>
+                            {{ error }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                        {% endif %}
+
+                        <form id="predictionForm" method="POST" action="{{ url_for('predict') }}">
+                            <div class="row g-4">
+                                <!-- Personal Information -->
+                                <div class="col-12">
+                                    <div class="section-header">
+                                        <h5 class="fw-bold text-primary">
+                                            <i class="fas fa-user me-2"></i>Personal Information
+                                        </h5>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <!-- Gender -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Gender <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="gender" class="form-select" required>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                    <small class="text-muted">Select customer's gender</small>
+                                </div>
+
+                                <!-- Senior Citizen -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Senior Citizen <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="senior_citizen" class="form-select" required>
+                                        <option value="0">No</option>
+                                        <option value="1">Yes</option>
+                                    </select>
+                                    <small class="text-muted">Is the customer 65+ years old?</small>
+                                </div>
+
+                                <!-- Partner -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Partner <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="partner" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have a partner?</small>
+                                </div>
+
+                                <!-- Dependents -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Dependents <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="dependents" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have dependents?</small>
+                                </div>
+
+                                <!-- Account Information -->
+                                <div class="col-12 mt-3">
+                                    <div class="section-header">
+                                        <h5 class="fw-bold text-primary">
+                                            <i class="fas fa-id-card me-2"></i>Account Information
+                                        </h5>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <!-- Tenure -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Tenure (months) <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="number" name="tenure" class="form-control" 
+                                           min="0" max="100" placeholder="e.g., 24" required>
+                                    <small class="text-muted">How many months has the customer been with the company?</small>
+                                </div>
+
+                                <!-- Phone Service -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Phone Service <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="phone_service" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have phone service?</small>
+                                </div>
+
+                                <!-- Multiple Lines -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Multiple Lines
+                                    </label>
+                                    <select name="multiple_lines" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No phone service">No phone service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have multiple phone lines?</small>
+                                </div>
+
+                                <!-- Internet Service -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Internet Service <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="internet_service" class="form-select" required>
+                                        <option value="DSL">DSL</option>
+                                        <option value="Fiber optic">Fiber optic</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                    <small class="text-muted">What type of internet service does the customer have?</small>
+                                </div>
+
+                                <!-- Service Information -->
+                                <div class="col-12 mt-3">
+                                    <div class="section-header">
+                                        <h5 class="fw-bold text-primary">
+                                            <i class="fas fa-wifi me-2"></i>Service Information
+                                        </h5>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <!-- Online Security -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Online Security
+                                    </label>
+                                    <select name="online_security" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No internet service">No internet service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have online security service?</small>
+                                </div>
+
+                                <!-- Online Backup -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Online Backup
+                                    </label>
+                                    <select name="online_backup" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No internet service">No internet service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have online backup service?</small>
+                                </div>
+
+                                <!-- Device Protection -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Device Protection
+                                    </label>
+                                    <select name="device_protection" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No internet service">No internet service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have device protection?</small>
+                                </div>
+
+                                <!-- Tech Support -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Tech Support
+                                    </label>
+                                    <select name="tech_support" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No internet service">No internet service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have tech support?</small>
+                                </div>
+
+                                <!-- Streaming TV -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Streaming TV
+                                    </label>
+                                    <select name="streaming_tv" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No internet service">No internet service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have streaming TV service?</small>
+                                </div>
+
+                                <!-- Streaming Movies -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Streaming Movies
+                                    </label>
+                                    <select name="streaming_movies" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No internet service">No internet service</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer have streaming movies service?</small>
+                                </div>
+
+                                <!-- Contract Information -->
+                                <div class="col-12 mt-3">
+                                    <div class="section-header">
+                                        <h5 class="fw-bold text-primary">
+                                            <i class="fas fa-file-contract me-2"></i>Contract Information
+                                        </h5>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <!-- Contract Type -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Contract <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="contract" class="form-select" required>
+                                        <option value="Month-to-month">Month-to-month</option>
+                                        <option value="One year">One year</option>
+                                        <option value="Two year">Two year</option>
+                                    </select>
+                                    <small class="text-muted">What type of contract does the customer have?</small>
+                                </div>
+
+                                <!-- Paperless Billing -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Paperless Billing <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="paperless_billing" class="form-select" required>
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                    <small class="text-muted">Does the customer use paperless billing?</small>
+                                </div>
+
+                                <!-- Payment Method -->
+                                <div class="col-md-12">
+                                    <label class="form-label fw-semibold">
+                                        Payment Method <span class="text-danger">*</span>
+                                    </label>
+                                    <select name="payment_method" class="form-select" required>
+                                        <option value="Electronic check">Electronic check</option>
+                                        <option value="Mailed check">Mailed check</option>
+                                        <option value="Bank transfer (automatic)">Bank transfer (automatic)</option>
+                                        <option value="Credit card (automatic)">Credit card (automatic)</option>
+                                    </select>
+                                    <small class="text-muted">What payment method does the customer use?</small>
+                                </div>
+
+                                <!-- Billing Information -->
+                                <div class="col-12 mt-3">
+                                    <div class="section-header">
+                                        <h5 class="fw-bold text-primary">
+                                            <i class="fas fa-dollar-sign me-2"></i>Billing Information
+                                        </h5>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <!-- Monthly Charges -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Monthly Charges (USD) <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="number" name="monthly_charges" class="form-control" 
+                                           step="0.01" min="0" placeholder="e.g., 75.50" required>
+                                    <small class="text-muted">What is the customer's monthly charge?</small>
+                                </div>
+
+                                <!-- Total Charges -->
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">
+                                        Total Charges (USD) <span class="text-danger">*</span>
+                                    </label>
+                                    <input type="number" name="total_charges" class="form-control" 
+                                           step="0.01" min="0" placeholder="e.g., 906.00" required>
+                                    <small class="text-muted">What is the customer's total charge?</small>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 text-center mt-4">
+                                    <div class="d-grid gap-3 d-md-block">
+                                        <button type="submit" class="btn btn-gradient btn-lg px-5" id="predictBtn">
+                                            <i class="fas fa-rocket me-2"></i>Predict Churn
+                                        </button>
+                                        <button type="reset" class="btn btn-outline-secondary btn-lg px-4">
+                                            <i class="fas fa-undo me-2"></i>Reset Form
+                                        </button>
+                                    </div>
+                                    <p class="text-muted mt-3">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        All fields marked with <span class="text-danger">*</span> are required
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prediction History -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card-glass">
+                        <h4 class="text-center mb-3 fw-bold">
+                            <i class="fas fa-history me-2"></i>Recent Predictions
+                        </h4>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Customer</th>
+                                        <th>Tenure</th>
+                                        <th>Contract</th>
+                                        <th>Monthly Charges</th>
+                                        <th>Prediction</th>
+                                        <th>Confidence</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>John Doe</td>
+                                        <td>24 months</td>
+                                        <td>One year</td>
+                                        <td>$75.50</td>
+                                        <td><span class="badge bg-success">Stay</span></td>
+                                        <td>95%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Jane Smith</td>
+                                        <td>6 months</td>
+                                        <td>Month-to-month</td>
+                                        <td>$85.30</td>
+                                        <td><span class="badge bg-danger">Churn</span></td>
+                                        <td>78%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Robert Johnson</td>
+                                        <td>36 months</td>
+                                        <td>Two year</td>
+                                        <td>$65.20</td>
+                                        <td><span class="badge bg-success">Stay</span></td>
+                                        <td>92%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Emily Davis</td>
+                                        <td>12 months</td>
+                                        <td>One year</td>
+                                        <td>$95.75</td>
+                                        <td><span class="badge bg-warning">Uncertain</span></td>
+                                        <td>54%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Michael Wilson</td>
+                                        <td>3 months</td>
+                                        <td>Month-to-month</td>
+                                        <td>$110.00</td>
+                                        <td><span class="badge bg-danger">Churn</span></td>
+                                        <td>82%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center text-muted">
+                            <small><i class="fas fa-info-circle me-1"></i>Showing last 5 predictions</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="30">
+                        <span class="ms-2">RetainIQ</span>
+                    </h5>
+                    <p class="text-secondary">End-to-End MLOps Customer Churn Prediction application powered by Flask and Machine Learning.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/kaushikivarshney2022-prog" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kaushiki-varshney" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="{{ url_for('home') }}">Home</a></li>
+                        <li><a href="{{ url_for('about') }}">About</a></li>
+                        <li><a href="{{ url_for('predict') }}">Prediction</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contact Info</h5>
+                    <ul class="footer-links">
+                        <li>
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:kaushikivarshney2022@gmail.com" class="text-decoration-none">
+                                kaushikivarshney2022@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone me-2"></i>
+                            +91-XXXXXXXXXX
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            Sharda University, Greater Noida
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary mt-4">
+            <div class="text-center text-secondary">
+                <p class="mb-0">
+                    &copy; 2026 RetainIQ. Developed by 
+                    <a href="https://github.com/kaushikivarshney2022-prog" target="_blank" class="text-decoration-none">
+                        Kaushiki Varshney
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner-container">
+            <div class="spinner-border text-light" role="status" style="width: 4rem; height: 4rem;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-3">Analyzing customer data...</p>
+            <div class="progress" style="width: 200px; margin: 10px auto;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 100%"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
