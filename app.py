@@ -128,20 +128,6 @@ def load_models():
         model = None
         scaler = None
 
-def safe_int(value, default=0):
-    try:
-        return int(value)
-    except (TypeError, ValueError):
-        return default
-
-
-def safe_float(value, default=0.0):
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return default
-
-
 def encode_categorical_features(data):
     """
     Encode categorical features for prediction
@@ -347,10 +333,10 @@ def predict():
             # Get form data
             form_data = {
                 'gender': request.form.get('gender', 'Male'),
-                'senior_citizen': safe_int(request.form.get('senior_citizen', 0)),
+                'senior_citizen': int(request.form.get('senior_citizen', 0)),
                 'partner': request.form.get('partner', 'No'),
                 'dependents': request.form.get('dependents', 'No'),
-                'tenure': safe_float(request.form.get('tenure', 0)),
+                'tenure': float(request.form.get('tenure', 0)),
                 'phone_service': request.form.get('phone_service', 'No'),
                 'multiple_lines': request.form.get('multiple_lines', 'No'),
                 'internet_service': request.form.get('internet_service', 'DSL'),
@@ -363,8 +349,8 @@ def predict():
                 'contract': request.form.get('contract', 'Month-to-month'),
                 'paperless_billing': request.form.get('paperless_billing', 'No'),
                 'payment_method': request.form.get('payment_method', 'Electronic check'),
-                'monthly_charges': safe_float(request.form.get('monthly_charges', 0)),
-                'total_charges': safe_float(request.form.get('total_charges', 0))
+                'monthly_charges': float(request.form.get('monthly_charges', 0)),
+                'total_charges': float(request.form.get('total_charges', 0))
             }
             
             # Log form data
@@ -644,3 +630,46 @@ if __name__ == '__main__':
     logger.info("="*60)
     
     app.run(debug=debug, host='0.0.0.0', port=port)
+    # Enhanced logging configuration with rotation
+import logging
+from logging.handlers import RotatingFileHandler
+
+# Configure logging with rotation
+def setup_logging():
+    """
+    Setup logging with rotation and proper formatting
+    """
+    # Create logs directory if it doesn't exist
+    log_dir = 'logs'
+    if not os.path.exists(log_dir):
+        os.makedirs(log_dir)
+    
+    # Create a rotating file handler
+    file_handler = RotatingFileHandler(
+        os.path.join(log_dir, 'retainiq.log'),
+        maxBytes=10485760,  # 10MB
+        backupCount=5
+    )
+    file_handler.setLevel(logging.INFO)
+    
+    # Create console handler
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(logging.INFO)
+    
+    # Create formatter
+    formatter = logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+    
+    # Get root logger
+    logger = logging.getLogger()
+    logger.setLevel(logging.INFO)
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+    
+    return logger
+
+# Call this in app.py before using logger
+logger = setup_logging()

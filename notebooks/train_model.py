@@ -1,5 +1,5 @@
 """
-Customer Churn Prediction - Model Training Script
+RetainIQ - Customer Churn Prediction - Model Training Script
 End-to-End MLOps Pipeline
 """
 
@@ -20,18 +20,50 @@ warnings.filterwarnings('ignore')
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-
 def load_data():
     """
     Load the customer churn dataset
     """
-    data_path = os.path.join('dataset', 'customer_churn.csv')
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+data_path = os.path.join(BASE_DIR, "dataset", "customer_churn.csv")
     
     if os.path.exists(data_path):
-        print(f"📊 Loading data from {data_path}")
+        print(f"Loading data from: {data_path}")
         df = pd.read_csv(data_path)
+        # Convert TotalCharges to numeric and handle blank values
+        if 'TotalCharges' in df.columns:
+            df['TotalCharges'] = df['TotalCharges'].astype(str).str.strip()
+            df['TotalCharges'].replace('', np.nan, inplace=True)
+            df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
+            if df['TotalCharges'].isna().any():
+                fill_count = int(df['TotalCharges'].isna().sum())
+                print(f"  Converting TotalCharges to numeric and filling {fill_count} missing values with 0")
+                df['TotalCharges'].fillna(0.0, inplace=True)
+        # Normalize target values
+        # Normalize target values
+if 'Churn' in df.columns:
+    df['Churn'] = df['Churn'].astype(str).str.strip()
+
+    # Convert Yes/No to 1/0
+    df['Churn'] = df['Churn'].replace({
+        'Yes': 1,
+        'No': 0,
+        'yes': 1,
+        'no': 0,
+        '1': 1,
+        '0': 0
+    })
+
+    # Convert to numeric safely
+    df['Churn'] = pd.to_numeric(df['Churn'], errors='coerce')
+
+    # Fill missing values
+    df['Churn'] = df['Churn'].fillna(0)
+
+    # Convert to integer
+    df['Churn'] = df['Churn'].astype(int)
     else:
-        print("📊 Creating sample dataset...")
+        print("Creating sample dataset...")
         # Create sample dataset for demonstration
         np.random.seed(42)
         n_samples = 7043
@@ -76,7 +108,7 @@ def load_data():
         # Save the dataset
         os.makedirs('dataset', exist_ok=True)
         df.to_csv(data_path, index=False)
-        print(f"✅ Sample dataset saved to {data_path}")
+        print(f"Sample dataset saved to: {data_path}")
     
     return df
 
@@ -84,11 +116,14 @@ def encode_categorical_features(df):
     """
     Encode categorical features matching the Flask app encoding
     """
-    print("🔄 Encoding categorical features...")
+    print("Encoding categorical features...")
     data = df.copy()
     
     # Gender: Male=0, Female=1
     data['gender_encoded'] = data['gender'].apply(lambda x: 1 if x == 'Female' else 0)
+    
+    # Senior Citizen: 0 or 1 (already encoded)
+    # Keep as is
     
     # Partner: No=0, Yes=1
     data['Partner_encoded'] = data['Partner'].apply(lambda x: 1 if x == 'Yes' else 0)
@@ -157,7 +192,7 @@ def encode_categorical_features(df):
     # Paperless Billing: No=0, Yes=1
     data['PaperlessBilling_encoded'] = data['PaperlessBilling'].apply(lambda x: 1 if x == 'Yes' else 0)
     
-    # Payment Method: Electronic check=0, Mailed check=1, Bank transfer (automatic)=2, Credit card (automatic)=3
+    # Payment Method: Electronic check=0, Mailed check=1, Bank transfer=2, Credit card=3
     payment_mapping = {
         'Electronic check': 0,
         'Mailed check': 1,
@@ -179,28 +214,28 @@ def encode_categorical_features(df):
     # Feature names for reference
     feature_names = feature_cols
     
-    print(f"✅ Encoded {len(feature_cols)} features")
+    print(f"Encoded {len(feature_cols)} features")
     return data, feature_names
 
 def prepare_data(df):
     """
     Prepare data for training
     """
-    print("🔄 Preparing data for training...")
+    print("Preparing data for training...")
     
     # Encode categorical features
     encoded_df, feature_names = encode_categorical_features(df)
     
     # Define features and target
     X = encoded_df[feature_names]
-    y = encoded_df['Churn']
+    y = encoded_df['Churn'].map({'No': 0, 'Yes': 1}).astype(int)
     
     # Handle missing values
     X = X.fillna(0)
     
-    print(f"✅ Features shape: {X.shape}")
-    print(f"✅ Target shape: {y.shape}")
-    print(f"✅ Churn distribution: {y.value_counts().to_dict()}")
+    print(f"Features shape: {X.shape}")
+    print(f"Target shape: {y.shape}")
+    print(f"Churn distribution: {y.value_counts().to_dict()}")
     
     return X, y, feature_names
 
@@ -208,7 +243,7 @@ def train_models(X_train, X_test, y_train, y_test):
     """
     Train multiple models and select the best one
     """
-    print("\n🤖 Training models...")
+    print("\nTraining models...")
     
     models = {
         'Random Forest': RandomForestClassifier(
@@ -259,18 +294,18 @@ def train_models(X_train, X_test, y_train, y_test):
                 'classification_report': classification_report(y_test, y_pred, output_dict=True)
             }
             
-            print(f"    ✅ Accuracy: {score:.4f}")
-            print(f"    ✅ CV Score: {cv_mean:.4f}")
+            print(f"    Accuracy: {score:.4f}")
+            print(f"    CV Score: {cv_mean:.4f}")
             
             if score > best_score:
                 best_score = score
                 best_model = model
                 
         except Exception as e:
-            print(f"    ❌ Error: {e}")
+            print(f"    Error: {e}")
             continue
     
-    print(f"\n✅ Best model: {best_model.__class__.__name__} with accuracy: {best_score:.4f}")
+    print(f"\nBest model: {best_model.__class__.__name__} with accuracy: {best_score:.4f}")
     
     return best_model, results
 
@@ -278,7 +313,7 @@ def save_artifacts(model, scaler, feature_names):
     """
     Save the trained model and artifacts
     """
-    print("\n💾 Saving artifacts...")
+    print("\nSaving artifacts...")
     
     # Create directories if they don't exist
     os.makedirs('models', exist_ok=True)
@@ -292,7 +327,7 @@ def save_artifacts(model, scaler, feature_names):
     }
     model_path = os.path.join('models', 'model.pkl')
     joblib.dump(model_data, model_path)
-    print(f"✅ Model saved to {model_path}")
+    print(f"Model saved to: {model_path}")
     
     # Save artifacts
     artifacts = {
@@ -302,7 +337,7 @@ def save_artifacts(model, scaler, feature_names):
     }
     artifacts_path = os.path.join('artifacts', 'features.pkl')
     joblib.dump(artifacts, artifacts_path)
-    print(f"✅ Artifacts saved to {artifacts_path}")
+    print(f"Artifacts saved to: {artifacts_path}")
     
     return True
 
@@ -311,32 +346,32 @@ def main():
     Main training pipeline
     """
     print("="*60)
-    print("🚀 Customer Churn Prediction - Model Training")
+    print("RetainIQ - Customer Churn Prediction - Model Training")
     print("="*60)
     
     try:
         # Load data
-        print("\n📊 Loading data...")
+        print("\nLoading data...")
         df = load_data()
-        print(f"✅ Dataset loaded: {df.shape[0]} rows, {df.shape[1]} columns")
+        print(f"Dataset loaded: {df.shape[0]} rows, {df.shape[1]} columns")
         
         # Prepare data
         X, y, feature_names = prepare_data(df)
         
         # Split data
-        print("\n📊 Splitting data...")
+        print("\nSplitting data...")
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=0.2, random_state=42, stratify=y
         )
-        print(f"✅ Train: {len(X_train)} samples")
-        print(f"✅ Test: {len(X_test)} samples")
+        print(f"Train: {len(X_train)} samples")
+        print(f"Test: {len(X_test)} samples")
         
         # Scale features
-        print("\n📊 Scaling features...")
+        print("\nScaling features...")
         scaler = StandardScaler()
         X_train_scaled = scaler.fit_transform(X_train)
         X_test_scaled = scaler.transform(X_test)
-        print("✅ Features scaled")
+        print("Features scaled")
         
         # Train models
         best_model, results = train_models(X_train_scaled, X_test_scaled, y_train, y_test)
@@ -346,7 +381,7 @@ def main():
         
         # Print summary
         print("\n" + "="*60)
-        print("📊 Training Summary")
+        print("Training Summary")
         print("="*60)
         for name, result in results.items():
             print(f"\n{name}:")
@@ -358,13 +393,13 @@ def main():
                 print(f"  F1-Score: {result['classification_report']['weighted avg']['f1-score']:.4f}")
         
         print("\n" + "="*60)
-        print("✅ Training completed successfully!")
+        print("Training completed successfully")
         print("="*60)
         
         return True
         
     except Exception as e:
-        print(f"\n❌ Error in training pipeline: {e}")
+        print(f"\nError in training pipeline: {e}")
         import traceback
         traceback.print_exc()
         return False

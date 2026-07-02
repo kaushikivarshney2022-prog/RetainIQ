@@ -1,40 +1,39 @@
-# RetainIQ
+# RetainIQ - Customer Churn Prediction
 
-## AI-Powered Customer Intelligence Platform
-A production-ready, end-to-end MLOps web application for predicting customer churn using Machine Learning. Built with Python Flask, Bootstrap 5, and Scikit-learn.
+## Overview
 
-## 📋 Overview
+RetainIQ is a production-ready, end-to-end MLOps web application for predicting customer churn using Machine Learning. Built with Python Flask, Bootstrap 5, and Scikit-learn, this application provides accurate, real-time predictions to help businesses retain their customers.
 
-This application provides a complete solution for predicting customer churn with a beautiful, responsive web interface. It demonstrates the full MLOps pipeline from data preprocessing to model deployment.
+## Features
 
-## ✨ Features
+### Core Features
+- Machine Learning Predictions using advanced algorithms
+- Real-time predictions with confidence scores
+- User-friendly, responsive interface
+- Dark mode support
+- Form validation (client and server-side)
+- Prediction history tracking
+- API endpoints for integration
 
-### 🎯 Core Features
-- **Machine Learning Predictions**: Advanced ML algorithms for accurate churn prediction
-- **Real-time Predictions**: Instant predictions with confidence scores
-- **User-friendly Interface**: Modern, responsive design with Bootstrap 5
-- **Dark Mode**: Toggle between light and dark themes
-- **Form Validation**: Client-side and server-side validation
-- **Prediction History**: View recent predictions
-
-### 🎨 UI Features
-- Modern glass-morphism design
-- Animated statistics counters
-- Smooth scrolling and transitions
-- Loading spinners and toast notifications
-- Scroll to top button
-- Responsive for all devices
-
-### 🔧 Technical Features
+### Technical Features
 - Flask backend with RESTful API
 - Scikit-learn model integration
 - Joblib for model serialization
 - Modular code structure
-- Error handling and validation
+- Comprehensive error handling
 - Health check endpoint
-- CORS support for API access
+- CORS support
 
-## 🛠️ Tech Stack
+### UI/UX Features
+- Professional beige/neutral theme
+- Glass-morphism design elements
+- Animated statistics counters
+- Smooth scrolling and transitions
+- Loading spinners and toast notifications
+- Scroll to top button
+- Fully responsive design
+
+## Tech Stack
 
 ### Frontend
 - HTML5
@@ -42,7 +41,6 @@ This application provides a complete solution for predicting customer churn with
 - Bootstrap 5
 - JavaScript (ES6+)
 - Font Awesome Icons
-- Chart.js for visualizations
 
 ### Backend
 - Python 3.9+
@@ -58,4 +56,4 @@ This application provides a complete solution for predicting customer churn with
 - Render-ready configuration
 - Environment variables support
 
-## 📁 Project Structure
+## Project Structure
