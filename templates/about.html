@@ -22,6 +22,9 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="40">
                 <span class="fw-bold ms-2">RetainIQ</span>
             </a>
+            <span class="status-pill d-none d-lg-inline-flex">
+                <i class="fas fa-signal"></i> Live Status
+            </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,7 +43,7 @@
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button id="darkModeToggle" class="btn btn-outline-primary btn-sm ms-2" aria-label="Toggle dark mode">
+                        <button id="darkModeToggle" class="btn btn-outline-gradient btn-sm ms-2" aria-label="Toggle dark mode">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
@@ -52,9 +55,11 @@
     <!-- About Content -->
     <section class="py-5" style="margin-top: 80px;">
         <div class="container">
-            <h1 class="text-center mb-5">
-                <span class="gradient-text">About RetainIQ</span>
-            </h1>
+            <div class="page-banner mx-auto text-center" style="max-width: 840px;">
+                <div class="chip"><i class="fas fa-rocket"></i> Modern Churn Intelligence</div>
+                <h1 class="display-5 mb-3"><span class="gradient-text">About RetainIQ</span></h1>
+                <p class="mb-0 text-secondary">A premium AI platform that transforms churn risk into actionable retention strategies using MLOps and real-time insights.</p>
+            </div>
 
             <div class="row g-4">
                 <!-- What is Customer Churn -->
@@ -229,7 +234,7 @@
                         <h3 class="fw-bold text-primary">
                             <i class="fas fa-image me-2"></i>Confusion Matrix
                         </h3>
-                        <div class="bg-light p-4 rounded-3" style="min-height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+                        <div class="summary-card p-4 rounded-3">
                             <i class="fas fa-table fa-4x text-secondary"></i>
                             <p class="text-secondary mt-2">Confusion Matrix Visualization</p>
                             <small class="text-muted">Actual vs Predicted values</small>

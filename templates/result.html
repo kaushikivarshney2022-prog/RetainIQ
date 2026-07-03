@@ -22,6 +22,9 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="40">
                 <span class="fw-bold ms-2">RetainIQ</span>
             </a>
+            <span class="status-pill d-none d-lg-inline-flex">
+                <i class="fas fa-signal"></i> Live Status
+            </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,7 +43,7 @@
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button id="darkModeToggle" class="btn btn-outline-primary btn-sm ms-2" aria-label="Toggle dark mode">
+                        <button id="darkModeToggle" class="btn btn-outline-gradient btn-sm ms-2" aria-label="Toggle dark mode">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
@@ -52,9 +55,14 @@
     <!-- Result Content -->
     <section class="py-5" style="margin-top: 80px;">
         <div class="container">
+            <div class="page-banner mx-auto text-center" style="max-width: 900px;">
+                <div class="chip"><i class="fas fa-chart-line"></i> Instant Insights</div>
+                <h1 class="display-5 mb-3 gradient-text">Prediction Result</h1>
+                <p class="mb-0 text-secondary">Our model has analyzed the data and generated a clear churn risk profile.</p>
+            </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="result-card">
+                    <div class="section-card">
                         <div class="text-center mb-4">
                             <h1 class="gradient-text">Prediction Result</h1>
                             <p class="text-secondary">Here is what our model predicts for this customer</p>
@@ -165,7 +173,7 @@
                                 <a href="{{ url_for('home') }}" class="btn btn-outline-gradient">
                                     <i class="fas fa-home me-2"></i>Home
                                 </a>
-                                <button onclick="window.print()" class="btn btn-outline-secondary">
+                                <button onclick="window.print()" class="btn btn-outline-gradient">
                                     <i class="fas fa-print me-2"></i>Print Result
                                 </button>
                             </div>
@@ -256,6 +264,13 @@
     <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none; align-items: center; justify-content: center;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

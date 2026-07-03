@@ -52,7 +52,7 @@
                     <a href="{{ url_for('predict') }}" class="btn btn-outline-gradient">
                         <i class="fas fa-rocket me-2"></i>Make a Prediction
                     </a>
-                    <a href="javascript:history.back()" class="btn btn-outline-secondary">
+                    <a href="javascript:history.back()" class="btn btn-outline-gradient">
                         <i class="fas fa-arrow-left me-2"></i>Go Back
                     </a>
                 </div>
@@ -147,6 +147,18 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none; align-items: center; justify-content: center;">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

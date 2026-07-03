@@ -22,6 +22,8 @@
         initToastNotifications();
         initSmoothScroll();
         initNavbarScroll();
+        initNavbarUnderline();
+        initScrollAnimations();
         initFAQAccordion();
         initContactForm();
         initScrollProgress();
@@ -88,7 +90,8 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const target = parseInt(entry.target.getAttribute('data-target'));
-                    animateCounter(entry.target, target);
+                    const suffix = entry.target.getAttribute('data-suffix') || '';
+                    animateCounter(entry.target, target, suffix);
                     observer.unobserve(entry.target);
                 }
             });
@@ -97,7 +100,7 @@
         counters.forEach(counter => observer.observe(counter));
     }
 
-    function animateCounter(element, target) {
+    function animateCounter(element, target, suffix = '') {
         let current = 0;
         const increment = target / 50;
         const duration = 2000;
@@ -106,15 +109,35 @@
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
-                element.textContent = target + '%';
+                element.textContent = target + suffix;
                 clearInterval(timer);
             } else {
-                element.textContent = Math.round(current) + '%';
+                element.textContent = Math.round(current) + suffix;
             }
         }, stepTime);
     }
 
     // ---------- Form Validation ----------
+    function initScrollAnimations() {
+        const items = document.querySelectorAll('.feature-card, .hero-meta-card, .stat-item, .section-card, .card-glass, .detail-card, .recommendation-card, .alert-with-icon');
+        if (!items.length) return;
+
+        items.forEach(item => item.classList.add('animate-fade'));
+
+        const observer = new IntersectionObserver((entries, observerRef) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observerRef.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        items.forEach(item => observer.observe(item));
+    }
+
     function initFormValidation() {
         const form = document.getElementById('predictionForm');
         if (!form) return;
@@ -295,6 +318,43 @@
                 navbar.style.padding = '1rem 0';
             }
         });
+    }
+
+    // ---------- Navbar Underline Animation ----------
+    function initNavbarUnderline() {
+        const navContainer = document.querySelector('.navbar-nav');
+        if (!navContainer) return;
+
+        const underline = document.createElement('span');
+        underline.className = 'nav-underline';
+        navContainer.appendChild(underline);
+
+        const links = navContainer.querySelectorAll('.nav-link');
+        if (!links.length) return;
+
+        const getCurrentLink = () => navContainer.querySelector('.nav-link.active') || links[0];
+        const updateUnderline = (link) => {
+            const rect = link.getBoundingClientRect();
+            const parentRect = navContainer.getBoundingClientRect();
+            underline.style.left = `${rect.left - parentRect.left}px`;
+            underline.style.width = `${rect.width}px`;
+        };
+
+        const activeLink = getCurrentLink();
+        updateUnderline(activeLink);
+
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => updateUnderline(link));
+            link.addEventListener('focus', () => updateUnderline(link));
+            link.addEventListener('click', () => {
+                links.forEach(item => item.classList.remove('active'));
+                link.classList.add('active');
+                updateUnderline(link);
+            });
+        });
+
+        navContainer.addEventListener('mouseleave', () => updateUnderline(getCurrentLink()));
+        window.addEventListener('resize', () => updateUnderline(getCurrentLink()));
     }
 
     // ---------- FAQ Accordion ----------

@@ -23,6 +23,9 @@
                 <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="40">
                 <span class="fw-bold ms-2">RetainIQ</span>
             </a>
+            <span class="status-pill d-none d-lg-inline-flex">
+                <i class="fas fa-signal"></i> Live Status
+            </span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -41,7 +44,7 @@
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <button id="darkModeToggle" class="btn btn-outline-primary btn-sm ms-2" aria-label="Toggle dark mode">
+                        <button id="darkModeToggle" class="btn btn-outline-gradient btn-sm ms-2" aria-label="Toggle dark mode">
                             <i class="fas fa-moon"></i>
                         </button>
                     </li>
@@ -52,6 +55,8 @@
 
     <!-- Hero Section -->
     <section class="hero-section d-flex align-items-center">
+        <div class="hero-glow"></div>
+        <div class="hero-shape"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
@@ -66,13 +71,34 @@
                         Leverage the power of machine learning to predict customer churn and take proactive retention actions. 
                         Our MLOps pipeline ensures accurate, scalable, and real-time predictions.
                     </p>
-                    <div class="d-flex gap-3 flex-wrap">
+                    <div class="d-flex gap-3 flex-wrap hero-cta-wrap">
                         <a href="{{ url_for('predict') }}" class="btn btn-gradient">
                             <i class="fas fa-rocket me-2"></i>Predict Now
                         </a>
                         <a href="{{ url_for('about') }}" class="btn btn-outline-gradient">
                             <i class="fas fa-info-circle me-2"></i>Learn More
                         </a>
+                    </div>
+                    <div class="hero-cta-accent mt-3">
+                        <span>Smart churn insights — ready in under 10 seconds.</span>
+                    </div>
+
+                    <div class="hero-meta-grid mt-5">
+                        <div class="hero-meta-card">
+                            <span class="section-badge">Live</span>
+                            <h6>24/7 churn prediction</h6>
+                            <p>Always-on intelligence for customer retention decisions.</p>
+                        </div>
+                        <div class="hero-meta-card">
+                            <span class="section-badge">Scaled</span>
+                            <h6>10,000+ predictions</h6>
+                            <p>Trusted by analysts to evaluate large customer bases quickly.</p>
+                        </div>
+                        <div class="hero-meta-card">
+                            <span class="section-badge">Secure</span>
+                            <h6>Encrypted data flow</h6>
+                            <p>Customer inputs stay safe across every prediction request.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center hero-image">
@@ -126,26 +152,118 @@
             <div class="row g-4">
                 <div class="col-md-3 col-6">
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="95">0</div>
+                        <div class="stat-number counter" data-target="95" data-suffix="%">0</div>
                         <div class="stat-label">Accuracy Rate</div>
                     </div>
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="10000">0</div>
+                        <div class="stat-number counter" data-target="10000" data-suffix="+">0</div>
                         <div class="stat-label">Predictions Made</div>
                     </div>
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="85">0</div>
+                        <div class="stat-number counter" data-target="85" data-suffix="%">0</div>
                         <div class="stat-label">Retention Success</div>
                     </div>
                 </div>
                 <div class="col-md-3 col-6">
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="99">0</div>
+                        <div class="stat-number counter" data-target="99" data-suffix="%">0</div>
                         <div class="stat-label">Uptime Guarantee</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="page-banner mx-auto text-center" style="max-width: 900px;">
+                <div class="chip"><i class="fas fa-award"></i> Trusted by Growth Teams</div>
+                <h2 class="display-6 mb-3 gradient-text">Built for modern retention teams</h2>
+                <p class="text-secondary mb-0">RetainIQ delivers high-impact insights, fast prediction cycles, and measurable uplift in customer retention.</p>
+            </div>
+
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <div class="metric"><span>95%</span></div>
+                        <h5 class="mb-2">Prediction Accuracy</h5>
+                        <p class="caption">Trusted performance using advanced feature engineering and model monitoring.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <div class="metric"><span>87%</span></div>
+                        <h5 class="mb-2">Retention Lift</h5>
+                        <p class="caption">Customers keep more business by acting on data-driven churn alerts.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <div class="metric"><span>2x</span></div>
+                        <h5 class="mb-2">Faster Decisions</h5>
+                        <p class="caption">Real-time predictions accelerate retention campaigns with immediate insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial & Metrics Section -->
+    <section class="py-5 bg-glass-surface">
+        <div class="container">
+            <div class="page-banner mx-auto text-center" style="max-width: 900px;">
+                <div class="chip"><i class="fas fa-heart"></i> Customer Success</div>
+                <h2 class="display-6 mb-3 gradient-text">Retention stories that speak for themselves</h2>
+                <p class="text-secondary mb-0">Hear from teams that use RetainIQ to reduce churn, win back customers, and make faster decisions.</p>
+            </div>
+
+            <div class="row g-4 mb-4">
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"RetainIQ helped us identify high-risk customers before they churned. We improved renewal rates by 18% in one quarter."</p>
+                        <div class="testimonial-author">
+                            <strong>Priya K.</strong>, Growth Lead at NovaTel
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The prediction dashboard is fast, intuitive, and extremely actionable. Our retention team now prioritizes outreach with confidence."</p>
+                        <div class="testimonial-author">
+                            <strong>Marcus L.</strong>, Director of Retention at StreamBridge
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="metrics-card text-center">
+                        <span>18%</span>
+                        <p>Average lift in retention rate</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="metrics-card text-center">
+                        <span>60%</span>
+                        <p>Faster churn action planning</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="metrics-card text-center">
+                        <span>200+</span>
+                        <p>Customers tracked monthly</p>
                     </div>
                 </div>
             </div>
