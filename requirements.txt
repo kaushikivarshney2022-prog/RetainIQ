@@ -1,5 +1,5 @@
 # ============================================
-# RetainIQ - Customer Churn Prediction
+# RetainIQ - Customer Churn Assessment
 # Latest Production Requirements
 # ============================================
 

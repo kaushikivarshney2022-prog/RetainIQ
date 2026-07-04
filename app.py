@@ -1,5 +1,5 @@
 """
-RetainIQ - Customer Churn Prediction - Flask Application
+RetainIQ - Customer Churn Assessment - Flask Application
 End-to-End MLOps Web Application
 Complete Professional Implementation
 """
@@ -130,7 +130,7 @@ def load_models():
 
 def encode_categorical_features(data):
     """
-    Encode categorical features for prediction
+    Encode categorical features for assessment
     Matches the encoding used in training
     
     Args:
@@ -254,15 +254,15 @@ def encode_categorical_features(data):
         logger.error(traceback.format_exc())
         raise
 
-def make_prediction(features):
+def make_assessment(features):
     """
-    Make prediction using the loaded model
+    Make assessment using the loaded engine
     
     Args:
         features: numpy array of encoded features
     
     Returns:
-        tuple: (prediction, probability, confidence)
+        tuple: (assessment, probability, confidence)
     """
     try:
         # Scale features if scaler is available
@@ -271,7 +271,7 @@ def make_prediction(features):
         else:
             features_scaled = features
         
-        # Make prediction
+        # Make assessment
         if model is not None:
             prediction = model.predict(features_scaled)[0]
             probability = model.predict_proba(features_scaled)[0]
@@ -284,7 +284,7 @@ def make_prediction(features):
             return None, None, None
             
     except Exception as e:
-        logger.error(f"Error making prediction: {e}")
+        logger.error(f"Error making assessment: {e}")
         logger.error(traceback.format_exc())
         return None, None, None
 
@@ -320,15 +320,15 @@ def contact():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     """
-    Prediction page route
+    Assessment page route
     Handles both GET and POST requests
     """
     if request.method == 'GET':
-        logger.info("Prediction form page accessed - RetainIQ")
+        logger.info("Assessment form page accessed - RetainIQ")
         return render_template('predict.html', active_page='predict')
     
     elif request.method == 'POST':
-        logger.info("Prediction request received - RetainIQ")
+        logger.info("Assessment request received - RetainIQ")
         try:
             # Get form data
             form_data = {
@@ -360,9 +360,9 @@ def predict():
             features = encode_categorical_features(form_data)
             logger.info(f"Features encoded: {features.shape}")
             
-            # Make prediction
+            # Make assessment
             if model is not None:
-                prediction, probability, confidence = make_prediction(features)
+                prediction, probability, confidence = make_assessment(features)
                 
                 if prediction is not None:
                     # Determine churn status
@@ -398,27 +398,27 @@ def predict():
                         'confidence': round(confidence, 2),
                         'recommendation': recommendation,
                         'alert_type': alert_type,
-                        'prediction': int(prediction),
-                        'prediction_label': 'Churn' if prediction == 1 else 'Stay',
-                        'model_used': model.__class__.__name__
+                        'assessment': int(prediction),
+                        'assessment_label': 'Churn' if prediction == 1 else 'Stay',
+                        'engine_used': model.__class__.__name__
                     }
                     
-                    logger.info(f"Prediction made: {result_data['prediction_label']} (Confidence: {result_data['confidence']}%)")
+                    logger.info(f"Assessment completed: {result_data['assessment_label']} (Confidence: {result_data['confidence']}%)")
                     
                     # Store in session
-                    session['last_prediction'] = result_data
+                    session['last_assessment'] = result_data
                     
                     # Render result page
                     return render_template('result.html', result=result_data, active_page='result')
                 else:
-                    logger.error("Prediction failed - model returned None")
+                    logger.error("Assessment failed - model returned None")
                     return render_template('predict.html', 
-                                         error='Prediction failed. Please try again.',
+                                         error='Assessment failed. Please try again.',
                                          active_page='predict')
             else:
-                logger.warning("Model not loaded. Using mock prediction for demonstration.")
+                logger.warning("Assessment engine not loaded. Using mock assessment for demonstration.")
                 
-                # Mock prediction for demonstration
+                # Mock assessment for demonstration
                 mock_prediction = np.random.choice([0, 1], p=[0.7, 0.3])
                 
                 if mock_prediction == 1:
@@ -444,20 +444,20 @@ def predict():
                     'confidence': round(churn_probability * 100, 2),
                     'recommendation': recommendation,
                     'alert_type': alert_type,
-                    'prediction': int(mock_prediction),
-                    'prediction_label': 'Churn' if mock_prediction == 1 else 'Stay',
-                    'model_used': 'Mock (Model not loaded)'
+                    'assessment': int(mock_prediction),
+                    'assessment_label': 'Churn' if mock_prediction == 1 else 'Stay',
+                    'engine_used': 'Mock (Model not loaded)'
                 }
                 
-                session['last_prediction'] = result_data
+                session['last_assessment'] = result_data
                 
                 return render_template('result.html', result=result_data, active_page='result')
                 
         except Exception as e:
-            logger.error(f"Error in prediction: {e}")
+            logger.error(f"Error in assessment: {e}")
             logger.error(traceback.format_exc())
             return render_template('predict.html', 
-                                 error='An error occurred during prediction. Please try again.',
+                                 error='An error occurred during assessment. Please try again.',
                                  active_page='predict')
 
 @app.route('/result')
@@ -466,10 +466,10 @@ def result():
     Result page route
     """
     logger.info("Result page accessed - RetainIQ")
-    result_data = session.get('last_prediction', None)
+    result_data = session.get('last_assessment', None)
     
     if result_data is None:
-        logger.warning("No prediction data in session")
+        logger.warning("No assessment data in session")
         return redirect(url_for('predict'))
     
     return render_template('result.html', result=result_data, active_page='result')
@@ -520,8 +520,8 @@ def health_check():
 @app.route('/api/predict', methods=['POST'])
 def api_predict():
     """
-    API endpoint for predictions
-    Accepts JSON data and returns prediction results
+    API endpoint for assessments
+    Accepts JSON data and returns assessment results
     """
     try:
         data = request.json
@@ -532,31 +532,31 @@ def api_predict():
                 'message': 'No data provided'
             }), 400
         
-        logger.info(f"API Prediction request received: {data}")
+        logger.info(f"API Assessment request received: {data}")
         
         # Extract features
         features = encode_categorical_features(data)
         
         if model is not None:
-            prediction, probability, confidence = make_prediction(features)
+            prediction, probability, confidence = make_assessment(features)
             
             if prediction is not None:
                 return jsonify({
                     'status': 'success',
                     'application': 'RetainIQ',
-                    'prediction': int(prediction),
-                    'prediction_label': 'Churn' if prediction == 1 else 'Stay',
+                    'assessment': int(prediction),
+                    'assessment_label': 'Churn' if prediction == 1 else 'Stay',
                     'probability': {
                         'churn': round(float(probability[1]), 4),
                         'stay': round(float(probability[0]), 4)
                     },
                     'confidence': round(float(confidence), 2),
-                    'model_used': model.__class__.__name__
+                    'engine_used': model.__class__.__name__
                 })
             else:
                 return jsonify({
                     'status': 'error',
-                    'message': 'Prediction failed'
+                    'message': 'Assessment failed'
                 }), 500
         else:
             return jsonify({
@@ -565,7 +565,7 @@ def api_predict():
             }), 503
             
     except Exception as e:
-        logger.error(f"API Prediction Error: {e}")
+        logger.error(f"API Assessment Error: {e}")
         return jsonify({
             'status': 'error',
             'message': str(e)
@@ -587,9 +587,9 @@ def model_info():
     })
 
 @app.route('/api/predict/form')
-def prediction_form_schema():
+def assessment_form_schema():
     """
-    Get the prediction form schema
+    Get the assessment form schema
     This helps frontend understand what fields are needed
     """
     return jsonify({
@@ -624,7 +624,7 @@ if __name__ == '__main__':
     debug = os.getenv('FLASK_ENV', 'development') == 'development'
     
     logger.info("="*60)
-    logger.info("Starting RetainIQ - Customer Churn Prediction Application")
+    logger.info("Starting RetainIQ - Customer Churn Assessment Application")
     logger.info(f"Server will run on: http://localhost:{port}")
     logger.info(f"Debug mode: {debug}")
     logger.info("="*60)

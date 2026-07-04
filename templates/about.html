@@ -37,7 +37,7 @@
                         <a class="nav-link active" href="{{ url_for('about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('predict') }}">Prediction</a>
+                        <a class="nav-link" href="{{ url_for('predict') }}">Assessment</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
@@ -56,9 +56,9 @@
     <section class="py-5" style="margin-top: 80px;">
         <div class="container">
             <div class="page-banner mx-auto text-center" style="max-width: 840px;">
-                <div class="chip"><i class="fas fa-rocket"></i> Modern Churn Intelligence</div>
+                <div class="chip"><i class="fas fa-handshake"></i> Built for retention teams</div>
                 <h1 class="display-5 mb-3"><span class="gradient-text">About RetainIQ</span></h1>
-                <p class="mb-0 text-secondary">A premium AI platform that transforms churn risk into actionable retention strategies using MLOps and real-time insights.</p>
+                <p class="mb-0 text-secondary">A practical customer retention assistant with clear guidance, rooted in real data and thoughtful workflows.</p>
             </div>
 
             <div class="row g-4">
@@ -73,31 +73,31 @@
                     </div>
                 </div>
                 
-                <!-- What is Machine Learning -->
+                <!-- How it works -->
                 <div class="col-md-6">
                     <div class="card-glass h-100">
                         <h3 class="fw-bold text-primary">
-                            <i class="fas fa-brain me-2"></i>What is Machine Learning?
+                            <i class="fas fa-brain me-2"></i>How this works
                         </h3>
-                        <p>Machine Learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. In this project, we use ML algorithms to predict customer churn based on historical data patterns.</p>
-                        <p class="text-secondary">Our model analyzes various customer features to identify patterns that indicate a likelihood of churn, enabling proactive retention actions.</p>
+                        <p>We look at customer data like tenure, service usage, and billing history to understand who may be headed toward churn.</p>
+                        <p class="text-secondary">This helps teams spot early risk and focus outreach where it matters most.</p>
                     </div>
                 </div>
 
-                <!-- What is MLOps -->
+                <!-- How the tool stays reliable -->
                 <div class="col-12">
                     <div class="card-glass">
                         <h3 class="fw-bold text-primary">
-                            <i class="fas fa-infinity me-2"></i>What is MLOps?
+                            <i class="fas fa-infinity me-2"></i>How this stays reliable
                         </h3>
-                        <p>MLOps (Machine Learning Operations) is a set of practices that combines machine learning, DevOps, and data engineering to deploy and maintain ML models in production reliably and efficiently.</p>
-                        <p class="text-secondary">This project implements MLOps principles including:</p>
+                        <p>We keep the retention workflow dependable by combining careful monitoring with regular updates and meaningful checks.</p>
+                        <p class="text-secondary">This project focuses on:</p>
                         <ul class="list-unstyled">
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Continuous model training and evaluation</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Model versioning and tracking</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Automated deployment pipeline</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Real-time monitoring and logging</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i>Scalable infrastructure</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Regular accuracy checks and review</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Clear version tracking for every update</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Maintenance practices that support long-term use</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Consistent logging and simple reporting</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i>Stable delivery that stays in sync with real data</li>
                         </ul>
                     </div>
                 </div>
@@ -108,24 +108,24 @@
                         <h3 class="fw-bold text-primary">
                             <i class="fas fa-database me-2"></i>Dataset Information
                         </h3>
-                        <p>Our model is trained on a comprehensive customer dataset containing:</p>
+                        <p>The analysis is built from a complete customer dataset containing:</p>
                         <ul>
                             <li>Customer demographics (gender, age, dependents)</li>
                             <li>Account information (tenure, contract type, payment method)</li>
                             <li>Services subscribed (internet, phone, streaming)</li>
                             <li>Billing details (monthly charges, total charges)</li>
-                            <li>Churn status (target variable)</li>
+                            <li>Customer retention outcomes</li>
                         </ul>
-                        <p class="text-secondary">Dataset size: 7,043 customers with 21 features.</p>
+                        <p class="text-secondary">Dataset size: 7,043 customers with 21 fields.</p>
                     </div>
                 </div>
 
                 <div class="col-md-6">
                     <div class="card-glass h-100">
                         <h3 class="fw-bold text-primary">
-                            <i class="fas fa-cogs me-2"></i>Algorithms Used
+                            <i class="fas fa-cogs me-2"></i>Analysis Approach
                         </h3>
-                        <p>We tested multiple algorithms and selected the best performing ones:</p>
+                        <p>We evaluated different retention approaches and picked the one that gives the most reliable customer insights.</p>
                         <div class="d-flex flex-wrap gap-2 mb-3">
                             <span class="badge bg-primary">Random Forest</span>
                             <span class="badge bg-success">XGBoost</span>
@@ -133,7 +133,7 @@
                             <span class="badge bg-warning">SVM</span>
                             <span class="badge bg-danger">Gradient Boosting</span>
                         </div>
-                        <p class="text-secondary">The final model achieved <strong class="gradient-text">95% accuracy</strong> on the test set.</p>
+                        <p class="text-secondary">The chosen approach demonstrated <strong class="gradient-text">95% accuracy</strong> on the test set.</p>
                     </div>
                 </div>
 
@@ -184,11 +184,11 @@
                     </div>
                 </div>
 
-                <!-- Model Performance -->
+                <!-- Performance Overview -->
                 <div class="col-md-6">
                     <div class="card-glass h-100">
                         <h3 class="fw-bold text-primary">
-                            <i class="fas fa-chart-bar me-2"></i>Model Performance
+                            <i class="fas fa-chart-bar me-2"></i>Performance Overview
                         </h3>
                         <div class="mb-3">
                             <div class="d-flex justify-content-between">
@@ -237,7 +237,7 @@
                         <div class="summary-card p-4 rounded-3">
                             <i class="fas fa-table fa-4x text-secondary"></i>
                             <p class="text-secondary mt-2">Confusion Matrix Visualization</p>
-                            <small class="text-muted">Actual vs Predicted values</small>
+                            <small class="text-muted">Actual vs assessed values</small>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                         <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="30">
                         <span class="ms-2">RetainIQ</span>
                     </h5>
-                    <p class="text-secondary">End-to-End MLOps Customer Churn Prediction application powered by Flask and Machine Learning.</p>
+                    <p class="text-secondary">A reliable churn insights tool designed for clear business decisions and easy deployment.</p>
                     <div class="social-links">
                         <a href="https://github.com/kaushikivarshney2022-prog" target="_blank" class="social-link">
                             <i class="fab fa-github"></i>
@@ -275,7 +275,7 @@
                     <ul class="footer-links">
                         <li><a href="{{ url_for('home') }}">Home</a></li>
                         <li><a href="{{ url_for('about') }}">About</a></li>
-                        <li><a href="{{ url_for('predict') }}">Prediction</a></li>
+                        <li><a href="{{ url_for('predict') }}">Assessment</a></li>
                         <li><a href="{{ url_for('contact') }}">Contact</a></li>
                     </ul>
                 </div>

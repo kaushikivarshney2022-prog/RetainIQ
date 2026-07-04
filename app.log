@@ -1400,3 +1400,839 @@ ValueError: X has 19 features, but RandomForestClassifier is expecting 30 featur
 2026-07-03 12:21:36,347 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 12:21:36] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
 2026-07-03 12:21:36,364 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 12:21:36] "[36mGET /static/images/hero.png HTTP/1.1[0m" 304 -
 2026-07-03 12:21:36,367 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 12:21:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-03 13:22:42,865 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-03 13:22:43,223 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-03 13:22:44,609 - __main__ - INFO - ============================================================
+2026-07-03 13:22:44,610 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-03 13:22:44,610 - __main__ - INFO - ============================================================
+2026-07-03 13:22:44,611 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-03 13:22:46,177 - __main__ - INFO - Model loaded successfully
+2026-07-03 13:22:46,178 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-03 13:22:46,178 - __main__ - INFO -    Features: 19
+2026-07-03 13:22:46,179 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-03 13:22:46,180 - __main__ - INFO - ============================================================
+2026-07-03 13:22:46,180 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-03 13:22:46,180 - __main__ - INFO - ============================================================
+2026-07-03 13:22:46,182 - __main__ - INFO - ============================================================
+2026-07-03 13:22:46,182 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-03 13:22:46,182 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-03 13:22:46,183 - __main__ - INFO - Debug mode: True
+2026-07-03 13:22:46,183 - __main__ - INFO - ============================================================
+2026-07-03 13:22:46,200 - werkzeug - WARNING -  * Debugger is active!
+2026-07-03 13:22:46,204 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-03 14:25:13,542 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-03 14:25:13,565 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-03 14:25:13,607 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:13] "GET /predict HTTP/1.1" 200 -
+2026-07-03 14:25:14,338 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-03 14:25:15,774 - __main__ - INFO - ============================================================
+2026-07-03 14:25:15,774 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-03 14:25:15,775 - __main__ - INFO - ============================================================
+2026-07-03 14:25:15,775 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-03 14:25:17,292 - __main__ - INFO - Model loaded successfully
+2026-07-03 14:25:17,293 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-03 14:25:17,293 - __main__ - INFO -    Features: 19
+2026-07-03 14:25:17,293 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-03 14:25:17,294 - __main__ - INFO - ============================================================
+2026-07-03 14:25:17,295 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-03 14:25:17,295 - __main__ - INFO - ============================================================
+2026-07-03 14:25:17,297 - __main__ - INFO - ============================================================
+2026-07-03 14:25:17,298 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-03 14:25:17,298 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-03 14:25:17,299 - __main__ - INFO - Debug mode: True
+2026-07-03 14:25:17,299 - __main__ - INFO - ============================================================
+2026-07-03 14:25:17,316 - werkzeug - WARNING -  * Debugger is active!
+2026-07-03 14:25:17,319 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-03 14:25:17,736 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-03 14:25:17,743 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-03 14:25:17,745 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:17] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-03 14:25:23,917 - __main__ - INFO - Prediction request received - RetainIQ
+2026-07-03 14:25:23,924 - __main__ - INFO - Form data received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'Yes', 'dependents': 'No', 'tenure': 6.0, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'Yes', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 75.5, 'total_charges': 906.0}
+2026-07-03 14:25:23,927 - __main__ - INFO - Features encoded: (1, 19)
+2026-07-03 14:25:23,939 - __main__ - INFO - Prediction made: Churn (Confidence: 50.54%)
+2026-07-03 14:25:23,942 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\AppData\\Roaming\\Python\\Python314\\site-packages\\sklearn\\utils\\validation.py', reloading
+2026-07-03 14:25:24,812 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-03 14:25:27,066 - __main__ - INFO - ============================================================
+2026-07-03 14:25:27,068 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-03 14:25:27,069 - __main__ - INFO - ============================================================
+2026-07-03 14:25:27,071 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-03 14:25:31,028 - __main__ - INFO - Model loaded successfully
+2026-07-03 14:25:31,029 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-03 14:25:31,030 - __main__ - INFO -    Features: 19
+2026-07-03 14:25:31,032 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-03 14:25:31,035 - __main__ - INFO - ============================================================
+2026-07-03 14:25:31,036 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-03 14:25:31,039 - __main__ - INFO - ============================================================
+2026-07-03 14:25:31,046 - __main__ - INFO - ============================================================
+2026-07-03 14:25:31,049 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-03 14:25:31,050 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-03 14:25:31,051 - __main__ - INFO - Debug mode: True
+2026-07-03 14:25:31,052 - __main__ - INFO - ============================================================
+2026-07-03 14:25:31,106 - werkzeug - WARNING -  * Debugger is active!
+2026-07-03 14:25:31,117 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-03 14:25:31,320 - __main__ - INFO - Prediction request received - RetainIQ
+2026-07-03 14:25:31,322 - __main__ - INFO - Prediction request received - RetainIQ
+2026-07-03 14:25:31,326 - __main__ - INFO - Form data received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'Yes', 'dependents': 'No', 'tenure': 6.0, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'Yes', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 75.5, 'total_charges': 906.0}
+2026-07-03 14:25:31,327 - __main__ - INFO - Form data received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'Yes', 'dependents': 'No', 'tenure': 6.0, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'Yes', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 75.5, 'total_charges': 906.0}
+2026-07-03 14:25:31,327 - __main__ - INFO - Features encoded: (1, 19)
+2026-07-03 14:25:31,329 - __main__ - INFO - Features encoded: (1, 19)
+2026-07-03 14:25:31,336 - __main__ - INFO - Prediction made: Churn (Confidence: 50.54%)
+2026-07-03 14:25:31,338 - __main__ - INFO - Prediction made: Churn (Confidence: 50.54%)
+2026-07-03 14:25:31,385 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:31] "POST /predict HTTP/1.1" 200 -
+2026-07-03 14:25:31,386 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:31] "POST /predict HTTP/1.1" 200 -
+2026-07-03 14:25:31,668 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-03 14:25:31,675 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:31] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-03 14:25:31,675 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-03 14:25:53,163 - __main__ - INFO - Prediction request received - RetainIQ
+2026-07-03 14:25:53,166 - __main__ - INFO - Form data received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'Yes', 'dependents': 'No', 'tenure': 6.0, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'Yes', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 75.5, 'total_charges': 906.0}
+2026-07-03 14:25:53,167 - __main__ - INFO - Features encoded: (1, 19)
+2026-07-03 14:25:53,176 - __main__ - INFO - Prediction made: Churn (Confidence: 50.54%)
+2026-07-03 14:25:53,184 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:53] "POST /predict HTTP/1.1" 200 -
+2026-07-03 14:25:53,212 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-03 14:25:53,218 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:53] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-03 14:25:53,221 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-03 14:25:53,245 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:53] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-03 14:25:58,923 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-03 14:25:58,947 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:58] "GET /predict HTTP/1.1" 200 -
+2026-07-03 14:25:58,962 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:58] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-03 14:25:58,978 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:58] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-03 14:25:58,979 - werkzeug - INFO - 127.0.0.1 - - [03/Jul/2026 14:25:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-04 11:28:57,369 - __main__ - INFO - ============================================================
+2026-07-04 11:28:57,372 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 11:28:57,375 - __main__ - INFO - ============================================================
+2026-07-04 11:28:57,378 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 11:29:40,569 - __main__ - INFO - Model loaded successfully
+2026-07-04 11:29:40,570 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 11:29:40,573 - __main__ - INFO -    Features: 19
+2026-07-04 11:29:40,579 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 11:29:40,634 - __main__ - INFO - ============================================================
+2026-07-04 11:29:40,636 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 11:29:40,638 - __main__ - INFO - ============================================================
+2026-07-04 11:29:40,660 - __main__ - INFO - ============================================================
+2026-07-04 11:29:40,664 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 11:29:40,667 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 11:29:40,670 - __main__ - INFO - Debug mode: True
+2026-07-04 11:29:40,673 - __main__ - INFO - ============================================================
+2026-07-04 11:29:41,210 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-04 11:29:41,215 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-04 11:29:41,342 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 11:29:47,338 - __main__ - INFO - ============================================================
+2026-07-04 11:29:47,340 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 11:29:47,342 - __main__ - INFO - ============================================================
+2026-07-04 11:29:47,345 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 11:29:58,016 - __main__ - INFO - Model loaded successfully
+2026-07-04 11:29:58,017 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 11:29:58,019 - __main__ - INFO -    Features: 19
+2026-07-04 11:29:58,021 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 11:29:58,024 - __main__ - INFO - ============================================================
+2026-07-04 11:29:58,025 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 11:29:58,027 - __main__ - INFO - ============================================================
+2026-07-04 11:29:58,039 - __main__ - INFO - ============================================================
+2026-07-04 11:29:58,041 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 11:29:58,041 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 11:29:58,042 - __main__ - INFO - Debug mode: True
+2026-07-04 11:29:58,043 - __main__ - INFO - ============================================================
+2026-07-04 11:29:58,117 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 11:29:58,134 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 11:35:05,007 - __main__ - INFO - Home page accessed - RetainIQ
+2026-07-04 11:35:05,095 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-04 11:35:05,110 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:05] "GET / HTTP/1.1" 200 -
+2026-07-04 11:35:05,687 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 11:35:09,163 - __main__ - INFO - ============================================================
+2026-07-04 11:35:09,164 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 11:35:09,165 - __main__ - INFO - ============================================================
+2026-07-04 11:35:09,166 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 11:35:14,784 - __main__ - INFO - Model loaded successfully
+2026-07-04 11:35:14,785 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 11:35:14,786 - __main__ - INFO -    Features: 19
+2026-07-04 11:35:14,787 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 11:35:14,788 - __main__ - INFO - ============================================================
+2026-07-04 11:35:14,789 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 11:35:14,789 - __main__ - INFO - ============================================================
+2026-07-04 11:35:14,794 - __main__ - INFO - ============================================================
+2026-07-04 11:35:14,794 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 11:35:14,797 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 11:35:14,798 - __main__ - INFO - Debug mode: True
+2026-07-04 11:35:14,799 - __main__ - INFO - ============================================================
+2026-07-04 11:35:14,840 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 11:35:14,852 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 11:35:15,372 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:15] "GET /static/images/logo.png HTTP/1.1" 200 -
+2026-07-04 11:35:15,372 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:15] "GET /static/images/hero.png HTTP/1.1" 200 -
+2026-07-04 11:35:15,394 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-04 11:35:15,431 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:15] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-04 11:35:20,783 - __main__ - INFO - Home page accessed - RetainIQ
+2026-07-04 11:35:20,821 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:20] "GET / HTTP/1.1" 200 -
+2026-07-04 11:35:20,873 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:20] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-04 11:35:20,882 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:20] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 11:35:20,884 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:20] "[36mGET /static/images/hero.png HTTP/1.1[0m" 304 -
+2026-07-04 11:35:20,888 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-04 11:35:21,071 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:21] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 11:35:35,762 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-04 11:35:35,848 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:35] "GET /predict HTTP/1.1" 200 -
+2026-07-04 11:35:35,890 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-04 11:35:35,899 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:35] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 11:35:35,902 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 11:35:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-04 12:23:55,351 - __main__ - INFO - ============================================================
+2026-07-04 12:23:55,352 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 12:23:55,352 - __main__ - INFO - ============================================================
+2026-07-04 12:23:55,354 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 12:23:57,860 - __main__ - INFO - Model loaded successfully
+2026-07-04 12:23:57,861 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 12:23:57,861 - __main__ - INFO -    Features: 19
+2026-07-04 12:23:57,862 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 12:23:57,863 - __main__ - INFO - ============================================================
+2026-07-04 12:23:57,863 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 12:23:57,863 - __main__ - INFO - ============================================================
+2026-07-04 12:23:57,866 - __main__ - INFO - ============================================================
+2026-07-04 12:23:57,866 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 12:23:57,867 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 12:23:57,868 - __main__ - INFO - Debug mode: True
+2026-07-04 12:23:57,869 - __main__ - INFO - ============================================================
+2026-07-04 12:23:57,925 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-04 12:23:57,927 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-04 12:23:57,957 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 12:24:00,448 - __main__ - INFO - ============================================================
+2026-07-04 12:24:00,449 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 12:24:00,450 - __main__ - INFO - ============================================================
+2026-07-04 12:24:00,451 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 12:24:02,783 - __main__ - INFO - Model loaded successfully
+2026-07-04 12:24:02,784 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 12:24:02,785 - __main__ - INFO -    Features: 19
+2026-07-04 12:24:02,785 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 12:24:02,786 - __main__ - INFO - ============================================================
+2026-07-04 12:24:02,786 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 12:24:02,787 - __main__ - INFO - ============================================================
+2026-07-04 12:24:02,789 - __main__ - INFO - ============================================================
+2026-07-04 12:24:02,790 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 12:24:02,791 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 12:24:02,791 - __main__ - INFO - Debug mode: True
+2026-07-04 12:24:02,792 - __main__ - INFO - ============================================================
+2026-07-04 12:24:02,817 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 12:24:02,823 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 12:24:09,430 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-04 12:24:09,455 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:24:09] "GET /predict HTTP/1.1" 200 -
+2026-07-04 12:24:09,663 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:24:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-04 12:24:09,667 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:24:09] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 12:24:09,670 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:24:09] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-04 12:24:09,743 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:24:09] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 12:24:49,186 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\models\\predict.py', reloading
+2026-07-04 12:24:51,486 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 12:24:54,441 - __main__ - INFO - ============================================================
+2026-07-04 12:24:54,442 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 12:24:54,443 - __main__ - INFO - ============================================================
+2026-07-04 12:24:54,443 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 12:25:07,308 - __main__ - INFO - Model loaded successfully
+2026-07-04 12:25:07,309 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 12:25:07,313 - __main__ - INFO -    Features: 19
+2026-07-04 12:25:07,320 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 12:25:07,329 - __main__ - INFO - ============================================================
+2026-07-04 12:25:07,331 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 12:25:07,333 - __main__ - INFO - ============================================================
+2026-07-04 12:25:07,356 - __main__ - INFO - ============================================================
+2026-07-04 12:25:07,359 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 12:25:07,363 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 12:25:07,364 - __main__ - INFO - Debug mode: True
+2026-07-04 12:25:07,367 - __main__ - INFO - ============================================================
+2026-07-04 12:25:07,466 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 12:25:07,488 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 12:32:55,254 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-04 12:32:55,274 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:32:55] "GET /predict HTTP/1.1" 200 -
+2026-07-04 12:32:55,469 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:32:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-04 12:32:55,472 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:32:55] "GET /static/images/logo.png HTTP/1.1" 200 -
+2026-07-04 12:32:55,721 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 12:32:55] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-07-04 16:03:01,018 - __main__ - INFO - ============================================================
+2026-07-04 16:03:01,019 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:03:01,021 - __main__ - INFO - ============================================================
+2026-07-04 16:03:01,025 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:03:37,714 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:03:37,716 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:03:37,717 - __main__ - INFO -    Features: 19
+2026-07-04 16:03:37,719 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:03:37,732 - __main__ - INFO - ============================================================
+2026-07-04 16:03:37,734 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:03:37,737 - __main__ - INFO - ============================================================
+2026-07-04 16:03:37,747 - __main__ - INFO - ============================================================
+2026-07-04 16:03:37,748 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:03:37,749 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:03:37,750 - __main__ - INFO - Debug mode: True
+2026-07-04 16:03:37,752 - __main__ - INFO - ============================================================
+2026-07-04 16:03:38,055 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-04 16:03:38,056 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-04 16:03:38,134 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:03:43,584 - __main__ - INFO - ============================================================
+2026-07-04 16:03:43,584 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:03:43,586 - __main__ - INFO - ============================================================
+2026-07-04 16:03:43,588 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:03:49,733 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:03:49,734 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:03:49,735 - __main__ - INFO -    Features: 19
+2026-07-04 16:03:49,736 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:03:49,739 - __main__ - INFO - ============================================================
+2026-07-04 16:03:49,740 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:03:49,740 - __main__ - INFO - ============================================================
+2026-07-04 16:03:49,756 - __main__ - INFO - ============================================================
+2026-07-04 16:03:49,756 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:03:49,757 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:03:49,757 - __main__ - INFO - Debug mode: True
+2026-07-04 16:03:49,758 - __main__ - INFO - ============================================================
+2026-07-04 16:03:49,827 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:03:49,852 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:11:06,726 - __main__ - INFO - Home page accessed - RetainIQ
+2026-07-04 16:11:06,778 - werkzeug - INFO -  * Detected change in 'C:\\Python314\\Lib\\encodings\\unicode_escape.py', reloading
+2026-07-04 16:11:06,823 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:06] "GET / HTTP/1.1" 200 -
+2026-07-04 16:11:08,037 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:11:12,678 - __main__ - INFO - ============================================================
+2026-07-04 16:11:12,681 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:11:12,684 - __main__ - INFO - ============================================================
+2026-07-04 16:11:12,688 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:11:21,951 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:11:21,954 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:11:21,957 - __main__ - INFO -    Features: 19
+2026-07-04 16:11:21,960 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:11:21,969 - __main__ - INFO - ============================================================
+2026-07-04 16:11:21,971 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:11:21,976 - __main__ - INFO - ============================================================
+2026-07-04 16:11:21,994 - __main__ - INFO - ============================================================
+2026-07-04 16:11:21,995 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:11:21,996 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:11:21,997 - __main__ - INFO - Debug mode: True
+2026-07-04 16:11:21,998 - __main__ - INFO - ============================================================
+2026-07-04 16:11:22,115 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:11:22,160 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:11:23,458 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:23] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-07-04 16:11:24,838 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:24] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 16:11:52,125 - __main__ - INFO - Prediction form page accessed - RetainIQ
+2026-07-04 16:11:52,259 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:52] "GET /predict HTTP/1.1" 200 -
+2026-07-04 16:11:52,342 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-07-04 16:11:52,342 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:52] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2026-07-04 16:11:52,425 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:11:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-07-04 16:18:24,954 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:18:25,665 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:18:40,777 - __main__ - INFO - ============================================================
+2026-07-04 16:18:40,778 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:18:40,779 - __main__ - INFO - ============================================================
+2026-07-04 16:18:40,780 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:19:14,127 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:19:14,128 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:19:14,130 - __main__ - INFO -    Features: 19
+2026-07-04 16:19:14,131 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:19:14,161 - __main__ - INFO - ============================================================
+2026-07-04 16:19:14,162 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:19:14,164 - __main__ - INFO - ============================================================
+2026-07-04 16:19:14,176 - __main__ - INFO - ============================================================
+2026-07-04 16:19:14,177 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:19:14,179 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:19:14,181 - __main__ - INFO - Debug mode: True
+2026-07-04 16:19:14,182 - __main__ - INFO - ============================================================
+2026-07-04 16:19:14,370 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:19:14,382 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:20:07,817 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\models\\predict.py', reloading
+2026-07-04 16:20:08,493 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:20:12,635 - __main__ - INFO - ============================================================
+2026-07-04 16:20:12,636 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:20:12,638 - __main__ - INFO - ============================================================
+2026-07-04 16:20:12,640 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:20:18,151 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:20:18,151 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:20:18,152 - __main__ - INFO -    Features: 19
+2026-07-04 16:20:18,153 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:20:18,156 - __main__ - INFO - ============================================================
+2026-07-04 16:20:18,156 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:20:18,157 - __main__ - INFO - ============================================================
+2026-07-04 16:20:18,168 - __main__ - INFO - ============================================================
+2026-07-04 16:20:18,169 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:20:18,170 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:20:18,171 - __main__ - INFO - Debug mode: True
+2026-07-04 16:20:18,172 - __main__ - INFO - ============================================================
+2026-07-04 16:20:18,229 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:20:18,241 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:20:37,478 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:20:38,162 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:20:42,266 - __main__ - INFO - ============================================================
+2026-07-04 16:20:42,266 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:20:42,267 - __main__ - INFO - ============================================================
+2026-07-04 16:20:42,268 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:20:47,474 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:20:47,475 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:20:47,476 - __main__ - INFO -    Features: 19
+2026-07-04 16:20:47,478 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:20:47,482 - __main__ - INFO - ============================================================
+2026-07-04 16:20:47,482 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:20:47,483 - __main__ - INFO - ============================================================
+2026-07-04 16:20:47,495 - __main__ - INFO - ============================================================
+2026-07-04 16:20:47,496 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:20:47,496 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:20:47,497 - __main__ - INFO - Debug mode: True
+2026-07-04 16:20:47,498 - __main__ - INFO - ============================================================
+2026-07-04 16:20:47,559 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:20:47,573 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:20:51,809 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:20:52,466 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:20:57,370 - __main__ - INFO - ============================================================
+2026-07-04 16:20:57,371 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:20:57,372 - __main__ - INFO - ============================================================
+2026-07-04 16:20:57,373 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:21:03,051 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:21:03,052 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:21:03,053 - __main__ - INFO -    Features: 19
+2026-07-04 16:21:03,054 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:21:03,057 - __main__ - INFO - ============================================================
+2026-07-04 16:21:03,058 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:21:03,060 - __main__ - INFO - ============================================================
+2026-07-04 16:21:03,073 - __main__ - INFO - ============================================================
+2026-07-04 16:21:03,074 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:21:03,074 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:21:03,075 - __main__ - INFO - Debug mode: True
+2026-07-04 16:21:03,075 - __main__ - INFO - ============================================================
+2026-07-04 16:21:03,136 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:21:03,152 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:21:18,328 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:21:18,986 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:21:22,781 - __main__ - INFO - ============================================================
+2026-07-04 16:21:22,782 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:21:22,783 - __main__ - INFO - ============================================================
+2026-07-04 16:21:22,784 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:21:28,866 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:21:28,867 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:21:28,867 - __main__ - INFO -    Features: 19
+2026-07-04 16:21:28,867 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:21:28,869 - __main__ - INFO - ============================================================
+2026-07-04 16:21:28,869 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:21:28,870 - __main__ - INFO - ============================================================
+2026-07-04 16:21:28,880 - __main__ - INFO - ============================================================
+2026-07-04 16:21:28,881 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:21:28,882 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:21:28,884 - __main__ - INFO - Debug mode: True
+2026-07-04 16:21:28,886 - __main__ - INFO - ============================================================
+2026-07-04 16:21:28,922 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:21:28,931 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:21:37,334 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:21:37,336 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:21:38,025 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:21:42,162 - __main__ - INFO - ============================================================
+2026-07-04 16:21:42,162 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:21:42,162 - __main__ - INFO - ============================================================
+2026-07-04 16:21:42,163 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:21:47,317 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:21:47,317 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:21:47,319 - __main__ - INFO -    Features: 19
+2026-07-04 16:21:47,321 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:21:47,323 - __main__ - INFO - ============================================================
+2026-07-04 16:21:47,323 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:21:47,324 - __main__ - INFO - ============================================================
+2026-07-04 16:21:47,342 - __main__ - INFO - ============================================================
+2026-07-04 16:21:47,344 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:21:47,345 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:21:47,345 - __main__ - INFO - Debug mode: True
+2026-07-04 16:21:47,346 - __main__ - INFO - ============================================================
+2026-07-04 16:21:47,392 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:21:47,404 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:30:09,150 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:30:09,865 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:30:13,884 - __main__ - INFO - ============================================================
+2026-07-04 16:30:13,886 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:30:13,887 - __main__ - INFO - ============================================================
+2026-07-04 16:30:13,888 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:30:20,975 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:30:20,977 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:30:20,979 - __main__ - INFO -    Features: 19
+2026-07-04 16:30:20,982 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:30:20,985 - __main__ - INFO - ============================================================
+2026-07-04 16:30:20,987 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:30:20,988 - __main__ - INFO - ============================================================
+2026-07-04 16:30:21,001 - __main__ - INFO - ============================================================
+2026-07-04 16:30:21,003 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:30:21,004 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:30:21,005 - __main__ - INFO - Debug mode: True
+2026-07-04 16:30:21,007 - __main__ - INFO - ============================================================
+2026-07-04 16:30:21,079 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:30:21,098 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:30:23,601 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:30:24,168 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:30:27,658 - __main__ - INFO - ============================================================
+2026-07-04 16:30:27,660 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:30:27,662 - __main__ - INFO - ============================================================
+2026-07-04 16:30:27,664 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:30:31,774 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:30:31,776 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:30:31,777 - __main__ - INFO -    Features: 19
+2026-07-04 16:30:31,778 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:30:31,781 - __main__ - INFO - ============================================================
+2026-07-04 16:30:31,782 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:30:31,782 - __main__ - INFO - ============================================================
+2026-07-04 16:30:31,793 - __main__ - INFO - ============================================================
+2026-07-04 16:30:31,794 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:30:31,795 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:30:31,796 - __main__ - INFO - Debug mode: True
+2026-07-04 16:30:31,796 - __main__ - INFO - ============================================================
+2026-07-04 16:30:31,851 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:30:31,860 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:32:41,447 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:32:43,148 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:33:16,707 - __main__ - INFO - ============================================================
+2026-07-04 16:33:16,712 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:33:16,720 - __main__ - INFO - ============================================================
+2026-07-04 16:33:16,724 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:33:35,310 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:33:35,312 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:33:35,333 - __main__ - INFO -    Features: 19
+2026-07-04 16:33:35,349 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:33:35,371 - __main__ - INFO - ============================================================
+2026-07-04 16:33:35,392 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:33:35,396 - __main__ - INFO - ============================================================
+2026-07-04 16:33:35,473 - __main__ - INFO - ============================================================
+2026-07-04 16:33:35,478 - __main__ - INFO - Starting RetainIQ - Customer Churn Prediction Application
+2026-07-04 16:33:35,486 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:33:35,501 - __main__ - INFO - Debug mode: True
+2026-07-04 16:33:35,505 - __main__ - INFO - ============================================================
+2026-07-04 16:33:35,936 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:33:35,991 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:33:53,207 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\models\\predict.py', reloading
+2026-07-04 16:33:54,423 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:34:12,792 - __main__ - INFO - ============================================================
+2026-07-04 16:34:12,794 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:34:12,795 - __main__ - INFO - ============================================================
+2026-07-04 16:34:12,797 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:34:30,254 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:34:30,257 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:34:30,272 - __main__ - INFO -    Features: 19
+2026-07-04 16:34:30,289 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:34:30,296 - __main__ - INFO - ============================================================
+2026-07-04 16:34:30,308 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:34:30,323 - __main__ - INFO - ============================================================
+2026-07-04 16:34:30,401 - __main__ - INFO - ============================================================
+2026-07-04 16:34:30,406 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:34:30,407 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:34:30,422 - __main__ - INFO - Debug mode: True
+2026-07-04 16:34:30,436 - __main__ - INFO - ============================================================
+2026-07-04 16:34:30,803 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:34:30,921 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:34:52,160 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\models\\predict.py', reloading
+2026-07-04 16:34:53,151 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:35:04,533 - __main__ - INFO - ============================================================
+2026-07-04 16:35:04,536 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:35:04,538 - __main__ - INFO - ============================================================
+2026-07-04 16:35:04,540 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:35:12,820 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:35:12,823 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:35:12,824 - __main__ - INFO -    Features: 19
+2026-07-04 16:35:12,825 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:35:12,829 - __main__ - INFO - ============================================================
+2026-07-04 16:35:12,831 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:35:12,832 - __main__ - INFO - ============================================================
+2026-07-04 16:35:12,847 - __main__ - INFO - ============================================================
+2026-07-04 16:35:12,847 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:35:12,848 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:35:12,849 - __main__ - INFO - Debug mode: True
+2026-07-04 16:35:12,850 - __main__ - INFO - ============================================================
+2026-07-04 16:35:12,933 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:35:12,955 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:37:09,562 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:37:10,479 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:37:22,000 - __main__ - INFO - ============================================================
+2026-07-04 16:37:22,002 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:37:22,004 - __main__ - INFO - ============================================================
+2026-07-04 16:37:22,007 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:37:33,813 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:37:33,816 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:37:33,818 - __main__ - INFO -    Features: 19
+2026-07-04 16:37:33,820 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:37:33,828 - __main__ - INFO - ============================================================
+2026-07-04 16:37:33,829 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:37:33,831 - __main__ - INFO - ============================================================
+2026-07-04 16:37:33,859 - __main__ - INFO - ============================================================
+2026-07-04 16:37:33,861 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:37:33,862 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:37:33,864 - __main__ - INFO - Debug mode: True
+2026-07-04 16:37:33,867 - __main__ - INFO - ============================================================
+2026-07-04 16:37:33,952 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:37:33,967 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:37:34,590 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\.venv-1\\Lib\\site-packages\\pip\\_internal\\commands\\completion.py', reloading
+2026-07-04 16:37:35,436 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:37:50,854 - __main__ - INFO - ============================================================
+2026-07-04 16:37:50,857 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:37:50,859 - __main__ - INFO - ============================================================
+2026-07-04 16:37:50,861 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:38:08,427 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:38:08,428 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:38:08,429 - __main__ - INFO -    Features: 19
+2026-07-04 16:38:08,432 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:38:08,435 - __main__ - INFO - ============================================================
+2026-07-04 16:38:08,437 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:38:08,439 - __main__ - INFO - ============================================================
+2026-07-04 16:38:08,465 - __main__ - INFO - ============================================================
+2026-07-04 16:38:08,466 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:38:08,467 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:38:08,469 - __main__ - INFO - Debug mode: True
+2026-07-04 16:38:08,471 - __main__ - INFO - ============================================================
+2026-07-04 16:38:08,572 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:38:08,596 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:38:51,906 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:38:55,159 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:39:09,309 - __main__ - INFO - ============================================================
+2026-07-04 16:39:09,311 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:39:09,312 - __main__ - INFO - ============================================================
+2026-07-04 16:39:09,313 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:39:20,182 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:39:20,184 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:39:20,186 - __main__ - INFO -    Features: 19
+2026-07-04 16:39:20,188 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:39:20,192 - __main__ - INFO - ============================================================
+2026-07-04 16:39:20,193 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:39:20,194 - __main__ - INFO - ============================================================
+2026-07-04 16:39:20,210 - __main__ - INFO - ============================================================
+2026-07-04 16:39:20,211 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:39:20,214 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:39:20,216 - __main__ - INFO - Debug mode: True
+2026-07-04 16:39:20,218 - __main__ - INFO - ============================================================
+2026-07-04 16:39:20,285 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:39:20,297 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:39:23,716 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:39:24,481 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:39:34,759 - __main__ - INFO - ============================================================
+2026-07-04 16:39:34,762 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:39:34,764 - __main__ - INFO - ============================================================
+2026-07-04 16:39:34,767 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:39:47,133 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:39:47,135 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:39:47,136 - __main__ - INFO -    Features: 19
+2026-07-04 16:39:47,139 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:39:47,143 - __main__ - INFO - ============================================================
+2026-07-04 16:39:47,144 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:39:47,145 - __main__ - INFO - ============================================================
+2026-07-04 16:39:47,160 - __main__ - INFO - ============================================================
+2026-07-04 16:39:47,161 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:39:47,161 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:39:47,162 - __main__ - INFO - Debug mode: True
+2026-07-04 16:39:47,162 - __main__ - INFO - ============================================================
+2026-07-04 16:39:47,236 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:39:47,252 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:40:24,915 - app - INFO - ============================================================
+2026-07-04 16:40:24,917 - app - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:40:24,921 - app - INFO - ============================================================
+2026-07-04 16:40:24,949 - app - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:40:44,746 - app - INFO - Model loaded successfully
+2026-07-04 16:40:44,749 - app - INFO -    Model Type: LogisticRegression
+2026-07-04 16:40:44,750 - app - INFO -    Features: 19
+2026-07-04 16:40:44,752 - app - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:40:44,756 - app - INFO - ============================================================
+2026-07-04 16:40:44,758 - app - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:40:44,760 - app - INFO - ============================================================
+2026-07-04 16:47:49,644 - __main__ - INFO - ============================================================
+2026-07-04 16:47:49,646 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:47:49,649 - __main__ - INFO - ============================================================
+2026-07-04 16:47:49,652 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:47:57,181 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:47:57,182 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:47:57,184 - __main__ - INFO -    Features: 19
+2026-07-04 16:47:57,187 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:47:57,192 - __main__ - INFO - ============================================================
+2026-07-04 16:47:57,194 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:47:57,195 - __main__ - INFO - ============================================================
+2026-07-04 16:47:57,205 - __main__ - INFO - ============================================================
+2026-07-04 16:47:57,206 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:47:57,207 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:47:57,208 - __main__ - INFO - Debug mode: True
+2026-07-04 16:47:57,208 - __main__ - INFO - ============================================================
+2026-07-04 16:47:57,394 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.191.236.126:5000
+2026-07-04 16:47:57,396 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-07-04 16:47:57,430 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:48:06,973 - __main__ - INFO - ============================================================
+2026-07-04 16:48:06,975 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:48:06,976 - __main__ - INFO - ============================================================
+2026-07-04 16:48:06,978 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:48:15,510 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:48:15,511 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:48:15,511 - __main__ - INFO -    Features: 19
+2026-07-04 16:48:15,512 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:48:15,515 - __main__ - INFO - ============================================================
+2026-07-04 16:48:15,516 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:48:15,516 - __main__ - INFO - ============================================================
+2026-07-04 16:48:15,527 - __main__ - INFO - ============================================================
+2026-07-04 16:48:15,527 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:48:15,528 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:48:15,528 - __main__ - INFO - Debug mode: True
+2026-07-04 16:48:15,529 - __main__ - INFO - ============================================================
+2026-07-04 16:48:15,598 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:48:15,609 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:48:21,117 - __main__ - INFO - API Assessment request received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'No', 'dependents': 'No', 'tenure': 12, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'No', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 70.0, 'total_charges': 840.0}
+2026-07-04 16:48:21,330 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:48:21] "POST /api/predict HTTP/1.1" 200 -
+2026-07-04 16:48:21,332 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\AppData\\Roaming\\Python\\Python314\\site-packages\\sklearn\\utils\\validation.py', reloading
+2026-07-04 16:48:22,123 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:48:30,103 - __main__ - INFO - ============================================================
+2026-07-04 16:48:30,104 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:48:30,104 - __main__ - INFO - ============================================================
+2026-07-04 16:48:30,105 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:48:35,364 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:48:35,368 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:48:35,370 - __main__ - INFO -    Features: 19
+2026-07-04 16:48:35,372 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:48:35,378 - __main__ - INFO - ============================================================
+2026-07-04 16:48:35,380 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:48:35,383 - __main__ - INFO - ============================================================
+2026-07-04 16:48:35,412 - __main__ - INFO - ============================================================
+2026-07-04 16:48:35,416 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:48:35,417 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:48:35,419 - __main__ - INFO - Debug mode: True
+2026-07-04 16:48:35,420 - __main__ - INFO - ============================================================
+2026-07-04 16:48:35,487 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:48:35,492 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:49:51,695 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:49:52,390 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:50:05,212 - __main__ - INFO - ============================================================
+2026-07-04 16:50:05,216 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:50:05,219 - __main__ - INFO - ============================================================
+2026-07-04 16:50:05,222 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:50:14,702 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:50:14,704 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:50:14,706 - __main__ - INFO -    Features: 19
+2026-07-04 16:50:14,710 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:50:14,715 - __main__ - INFO - ============================================================
+2026-07-04 16:50:14,717 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:50:14,720 - __main__ - INFO - ============================================================
+2026-07-04 16:50:14,741 - __main__ - INFO - ============================================================
+2026-07-04 16:50:14,744 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:50:14,745 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:50:14,747 - __main__ - INFO - Debug mode: True
+2026-07-04 16:50:14,748 - __main__ - INFO - ============================================================
+2026-07-04 16:50:14,869 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:50:14,899 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:50:16,004 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\models\\predict.py', reloading
+2026-07-04 16:50:17,155 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:50:24,984 - __main__ - INFO - ============================================================
+2026-07-04 16:50:24,985 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:50:24,987 - __main__ - INFO - ============================================================
+2026-07-04 16:50:24,989 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:50:33,558 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:50:33,560 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:50:33,561 - __main__ - INFO -    Features: 19
+2026-07-04 16:50:33,563 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:50:33,568 - __main__ - INFO - ============================================================
+2026-07-04 16:50:33,569 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:50:33,570 - __main__ - INFO - ============================================================
+2026-07-04 16:50:33,587 - __main__ - INFO - ============================================================
+2026-07-04 16:50:33,588 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:50:33,590 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:50:33,592 - __main__ - INFO - Debug mode: True
+2026-07-04 16:50:33,593 - __main__ - INFO - ============================================================
+2026-07-04 16:50:33,669 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:50:33,686 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:50:34,075 - __main__ - INFO - API Assessment request received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'No', 'dependents': 'No', 'tenure': 12, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'No', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 70.0, 'total_charges': 840.0}
+2026-07-04 16:50:34,085 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:50:34] "POST /api/predict HTTP/1.1" 200 -
+2026-07-04 16:51:17,893 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\tests\\test_ui_submit.py', reloading
+2026-07-04 16:51:18,646 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:51:24,723 - __main__ - INFO - ============================================================
+2026-07-04 16:51:24,724 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:51:24,725 - __main__ - INFO - ============================================================
+2026-07-04 16:51:24,725 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:51:33,124 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:51:33,127 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:51:33,128 - __main__ - INFO -    Features: 19
+2026-07-04 16:51:33,130 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:51:33,134 - __main__ - INFO - ============================================================
+2026-07-04 16:51:33,136 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:51:33,139 - __main__ - INFO - ============================================================
+2026-07-04 16:51:33,149 - __main__ - INFO - ============================================================
+2026-07-04 16:51:33,150 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:51:33,150 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:51:33,152 - __main__ - INFO - Debug mode: True
+2026-07-04 16:51:33,152 - __main__ - INFO - ============================================================
+2026-07-04 16:51:33,215 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:51:33,231 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:51:33,541 - __main__ - INFO - Assessment request received - RetainIQ
+2026-07-04 16:51:33,553 - __main__ - INFO - Form data received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'No', 'dependents': 'No', 'tenure': 12.0, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'No', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 70.0, 'total_charges': 840.0}
+2026-07-04 16:51:33,560 - __main__ - INFO - Features encoded: (1, 19)
+2026-07-04 16:51:33,575 - __main__ - INFO - Assessment completed: Stay (Confidence: 53.61%)
+2026-07-04 16:51:33,628 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:51:33] "POST /predict HTTP/1.1" 200 -
+2026-07-04 16:52:59,177 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\app.py', reloading
+2026-07-04 16:53:00,216 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:53:09,480 - __main__ - INFO - ============================================================
+2026-07-04 16:53:09,482 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:53:09,483 - __main__ - INFO - ============================================================
+2026-07-04 16:53:09,486 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:53:22,138 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:53:22,138 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:53:22,139 - __main__ - INFO -    Features: 19
+2026-07-04 16:53:22,139 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:53:22,142 - __main__ - INFO - ============================================================
+2026-07-04 16:53:22,143 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:53:22,143 - __main__ - INFO - ============================================================
+2026-07-04 16:53:22,150 - __main__ - INFO - ============================================================
+2026-07-04 16:53:22,151 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:53:22,151 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:53:22,152 - __main__ - INFO - Debug mode: True
+2026-07-04 16:53:22,152 - __main__ - INFO - ============================================================
+2026-07-04 16:53:22,222 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:53:22,232 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:53:26,551 - __main__ - INFO - Assessment request received - RetainIQ
+2026-07-04 16:53:26,558 - __main__ - INFO - Form data received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'No', 'dependents': 'No', 'tenure': 12.0, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'No', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 70.0, 'total_charges': 840.0}
+2026-07-04 16:53:26,559 - __main__ - INFO - Features encoded: (1, 19)
+2026-07-04 16:53:26,567 - __main__ - INFO - Assessment completed: Stay (Confidence: 53.61%)
+2026-07-04 16:53:26,609 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:53:26] "POST /predict HTTP/1.1" 200 -
+2026-07-04 16:54:31,217 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\notebooks\\train_model.py', reloading
+2026-07-04 16:54:32,043 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:54:47,174 - __main__ - INFO - ============================================================
+2026-07-04 16:54:47,178 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:54:47,180 - __main__ - INFO - ============================================================
+2026-07-04 16:54:47,183 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:54:56,494 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:54:56,523 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:54:56,539 - __main__ - INFO -    Features: 19
+2026-07-04 16:54:56,550 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:54:56,556 - __main__ - INFO - ============================================================
+2026-07-04 16:54:56,558 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:54:56,560 - __main__ - INFO - ============================================================
+2026-07-04 16:54:56,589 - __main__ - INFO - ============================================================
+2026-07-04 16:54:56,591 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:54:56,594 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:54:56,596 - __main__ - INFO - Debug mode: True
+2026-07-04 16:54:56,597 - __main__ - INFO - ============================================================
+2026-07-04 16:54:56,720 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:54:56,746 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:55:14,328 - werkzeug - INFO -  * Detected change in 'C:\\Users\\kaush\\OneDrive\\Desktop\\RetainIQ\\notebooks\\train_model.py', reloading
+2026-07-04 16:55:15,283 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-07-04 16:55:25,394 - __main__ - INFO - ============================================================
+2026-07-04 16:55:25,396 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:55:25,397 - __main__ - INFO - ============================================================
+2026-07-04 16:55:25,399 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:55:40,070 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:55:40,071 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:55:40,074 - __main__ - INFO -    Features: 19
+2026-07-04 16:55:40,076 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:55:40,083 - __main__ - INFO - ============================================================
+2026-07-04 16:55:40,086 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:55:40,088 - __main__ - INFO - ============================================================
+2026-07-04 16:55:40,115 - __main__ - INFO - ============================================================
+2026-07-04 16:55:40,117 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:55:40,118 - __main__ - INFO - Server will run on: http://localhost:5000
+2026-07-04 16:55:40,120 - __main__ - INFO - Debug mode: True
+2026-07-04 16:55:40,122 - __main__ - INFO - ============================================================
+2026-07-04 16:55:40,244 - werkzeug - WARNING -  * Debugger is active!
+2026-07-04 16:55:40,284 - werkzeug - INFO -  * Debugger PIN: 266-439-475
+2026-07-04 16:55:40,848 - __main__ - INFO - API Assessment request received: {'gender': 'Male', 'senior_citizen': 0, 'partner': 'No', 'dependents': 'No', 'tenure': 12, 'phone_service': 'Yes', 'multiple_lines': 'No', 'internet_service': 'DSL', 'online_security': 'No', 'online_backup': 'No', 'device_protection': 'No', 'tech_support': 'No', 'streaming_tv': 'No', 'streaming_movies': 'No', 'contract': 'Month-to-month', 'paperless_billing': 'Yes', 'payment_method': 'Electronic check', 'monthly_charges': 70.0, 'total_charges': 840.0}
+2026-07-04 16:55:40,862 - werkzeug - INFO - 127.0.0.1 - - [04/Jul/2026 16:55:40] "POST /api/predict HTTP/1.1" 200 -
+2026-07-04 16:56:48,234 - __main__ - INFO - ============================================================
+2026-07-04 16:56:48,235 - __main__ - INFO - Loading Models and Artifacts - RetainIQ
+2026-07-04 16:56:48,235 - __main__ - INFO - ============================================================
+2026-07-04 16:56:48,237 - __main__ - INFO - Loading model from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\models\model.pkl
+2026-07-04 16:56:51,092 - __main__ - INFO - Model loaded successfully
+2026-07-04 16:56:51,092 - __main__ - INFO -    Model Type: LogisticRegression
+2026-07-04 16:56:51,093 - __main__ - INFO -    Features: 19
+2026-07-04 16:56:51,093 - __main__ - INFO - Loading artifacts from: C:\Users\kaush\OneDrive\Desktop\RetainIQ\artifacts\features.pkl
+2026-07-04 16:56:51,095 - __main__ - INFO - ============================================================
+2026-07-04 16:56:51,095 - __main__ - INFO - Models Loaded: Model=True, Scaler=True
+2026-07-04 16:56:51,096 - __main__ - INFO - ============================================================
+2026-07-04 16:56:51,104 - __main__ - INFO - ============================================================
+2026-07-04 16:56:51,104 - __main__ - INFO - Starting RetainIQ - Customer Churn Assessment Application
+2026-07-04 16:56:51,105 - __main__ - INFO - Server will run on: http://localhost:5000

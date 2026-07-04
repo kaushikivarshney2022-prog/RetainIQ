@@ -1,5 +1,5 @@
 """
-RetainIQ - Customer Churn Prediction - Model Training Script
+RetainIQ - Customer Churn Assessment - Model Training Script
 End-to-End MLOps Pipeline
 """
 
@@ -25,11 +25,12 @@ def load_data():
     Load the customer churn dataset
     """
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-data_path = os.path.join(BASE_DIR, "dataset", "customer_churn.csv")
-    
+    data_path = os.path.join(BASE_DIR, "dataset", "customer_churn.csv")
+
     if os.path.exists(data_path):
         print(f"Loading data from: {data_path}")
         df = pd.read_csv(data_path)
+
         # Convert TotalCharges to numeric and handle blank values
         if 'TotalCharges' in df.columns:
             df['TotalCharges'] = df['TotalCharges'].astype(str).str.strip()
@@ -39,35 +40,26 @@ data_path = os.path.join(BASE_DIR, "dataset", "customer_churn.csv")
                 fill_count = int(df['TotalCharges'].isna().sum())
                 print(f"  Converting TotalCharges to numeric and filling {fill_count} missing values with 0")
                 df['TotalCharges'].fillna(0.0, inplace=True)
-        # Normalize target values
-        # Normalize target values
-if 'Churn' in df.columns:
-    df['Churn'] = df['Churn'].astype(str).str.strip()
 
-    # Convert Yes/No to 1/0
-    df['Churn'] = df['Churn'].replace({
-        'Yes': 1,
-        'No': 0,
-        'yes': 1,
-        'no': 0,
-        '1': 1,
-        '0': 0
-    })
+        # Normalize target values if present
+        if 'Churn' in df.columns:
+            df['Churn'] = df['Churn'].astype(str).str.strip()
+            df['Churn'] = df['Churn'].replace({
+                'Yes': 1,
+                'No': 0,
+                'yes': 1,
+                'no': 0,
+                '1': 1,
+                '0': 0
+            })
+            df['Churn'] = pd.to_numeric(df['Churn'], errors='coerce').fillna(0).astype(int)
 
-    # Convert to numeric safely
-    df['Churn'] = pd.to_numeric(df['Churn'], errors='coerce')
-
-    # Fill missing values
-    df['Churn'] = df['Churn'].fillna(0)
-
-    # Convert to integer
-    df['Churn'] = df['Churn'].astype(int)
     else:
         print("Creating sample dataset...")
         # Create sample dataset for demonstration
         np.random.seed(42)
         n_samples = 7043
-        
+
         df = pd.DataFrame({
             'gender': np.random.choice(['Male', 'Female'], n_samples),
             'SeniorCitizen': np.random.choice([0, 1], n_samples, p=[0.85, 0.15]),
@@ -89,27 +81,21 @@ if 'Churn' in df.columns:
             'MonthlyCharges': np.random.uniform(20, 120, n_samples).round(2),
             'TotalCharges': np.random.uniform(50, 8000, n_samples).round(2),
         })
-        
+
         # Create churn based on some patterns
         df['Churn'] = 0
-        # Higher churn for month-to-month contracts
         month_to_month_mask = df['Contract'] == 'Month-to-month'
-        df.loc[month_to_month_mask, 'Churn'] = np.random.choice([0, 1], 
-            size=len(df[month_to_month_mask]), p=[0.6, 0.4])
-        # Higher churn for fiber optic
+        df.loc[month_to_month_mask, 'Churn'] = np.random.choice([0, 1], size=len(df[month_to_month_mask]), p=[0.6, 0.4])
         fiber_mask = df['InternetService'] == 'Fiber optic'
-        df.loc[fiber_mask, 'Churn'] = np.random.choice([0, 1], 
-            size=len(df[fiber_mask]), p=[0.7, 0.3])
-        # Lower churn for long tenure
+        df.loc[fiber_mask, 'Churn'] = np.random.choice([0, 1], size=len(df[fiber_mask]), p=[0.7, 0.3])
         tenure_mask = df['tenure'] > 50
-        df.loc[tenure_mask, 'Churn'] = np.random.choice([0, 1], 
-            size=len(df[tenure_mask]), p=[0.9, 0.1])
-        
+        df.loc[tenure_mask, 'Churn'] = np.random.choice([0, 1], size=len(df[tenure_mask]), p=[0.9, 0.1])
+
         # Save the dataset
-        os.makedirs('dataset', exist_ok=True)
+        os.makedirs(os.path.join(BASE_DIR, 'dataset'), exist_ok=True)
         df.to_csv(data_path, index=False)
         print(f"Sample dataset saved to: {data_path}")
-    
+
     return df
 
 def encode_categorical_features(df):
@@ -346,7 +332,7 @@ def main():
     Main training pipeline
     """
     print("="*60)
-    print("RetainIQ - Customer Churn Prediction - Model Training")
+    print("RetainIQ - Customer Churn Assessment - Model Training")
     print("="*60)
     
     try:

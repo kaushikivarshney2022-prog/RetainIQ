@@ -139,7 +139,7 @@
     }
 
     function initFormValidation() {
-        const form = document.getElementById('predictionForm');
+        const form = document.getElementById('assessmentForm');
         if (!form) return;
 
         // Add real-time validation
@@ -434,7 +434,7 @@
 
     // ---------- Form Auto-Save ----------
     function initFormAutoSave() {
-        const form = document.getElementById('predictionForm');
+        const form = document.getElementById('assessmentForm');
         if (!form) return;
 
         const inputs = form.querySelectorAll('input, select, textarea');

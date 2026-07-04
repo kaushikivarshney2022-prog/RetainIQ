@@ -1,15 +1,15 @@
-# RetainIQ - Customer Churn Prediction
+# RetainIQ - Customer Churn Assessment
 
 ## Overview
 
-RetainIQ is a polished, production-ready MLOps web application for predicting customer churn. Built with Python Flask, Bootstrap 5, and Scikit-learn, it combines a modern UI with a sophisticated prediction workflow so businesses can identify attrition risk and act fast.
+RetainIQ is a polished, production-ready MLOps web application for assessing customer churn risk. Built with Python Flask, Bootstrap 5, and Scikit-learn, it combines a modern UI with a thoughtful assessment workflow so businesses can identify attrition risk and act thoughtfully.
 
 ## Launch Summary
 
 RetainIQ now includes a premium launch-ready design with:
 - polished glassmorphism theme and premium gradient accents
 - animated homepage hero with CTA glow, testimonial cards, and impact metrics
-- prediction flow with clean form layout, clear validation, and instant result screens
+- assessment flow with clean form layout, clear validation, and instant result screens
 - modern navigation with active underline animation and live status pill
 - consistent page banners, cards, and data visualizations across all routes
 
@@ -22,10 +22,10 @@ RetainIQ now includes a premium launch-ready design with:
 - Dark mode toggle plus responsive mobile layout
 - Loading overlay and interactive form validation
 
-### Prediction Experience
-- Customer churn prediction form with structured sections
+### Assessment Experience
+- Customer churn assessment form with structured sections
 - Result dashboard with probability, confidence, summary, and recommendations
-- Action buttons for new predictions, home navigation, and result printing
+- Action buttons for new assessments, home navigation, and result printing
 - Clean alert states for churn risk vs retention outcome
 
 ## Quick Start
@@ -52,11 +52,11 @@ RetainIQ now includes a premium launch-ready design with:
 - `static/css/style.css` — custom theme and layout styles
 - `static/js/script.js` — UI interactions, animations, and form helpers
 - `dataset/` — source data used for model training and evaluation
-- `models/` — model artifacts and prediction utilities
+- `models/` — model artifacts and assessment utilities
 
 ## Notes
 
-- Ensure the model files are available in `models/` before generating predictions.
+- Ensure the model files are available in `models/` before running assessments.
 - The UI refresh was built to deliver a premium, modern customer-facing experience.
 - This project is optimized for rapid demonstration and local testing.
 
@@ -68,9 +68,9 @@ To preview the application in a local browser, run the app and visit:
 http://127.0.0.1:5000
 ```
 
-Then navigate through:
+- Then navigate through:
 - Home / landing experience
-- Prediction form page
+- Assessment form page
 - Result dashboard with risk insights
 - About and contact pages for supplemental content
 
@@ -87,7 +87,7 @@ For production, set your hosting provider's environment variables and ensure the
 
 ## How to Extend
 
-- Add new prediction features by updating `templates/predict.html` and the form-handling logic in `app.py`.
+- Add new assessment features by updating `templates/predict.html` and the form-handling logic in `app.py`.
 - Include more model inputs or new datasets in `dataset/` and retrain the model with updated preprocessing.
 - Enhance the UI by editing `static/css/style.css` or adding new sections in `templates/index.html`.
 - Add analytics or monitoring by extending Flask routes and integrating logging or telemetry.
@@ -96,4 +96,4 @@ For production, set your hosting provider's environment variables and ensure the
 
 - The current UI is styled for desktop and mobile layouts but has not been fully stress-tested on all screen sizes.
 - Form validation is primarily client-side; sensitive production use should include stronger server-side validation.
-- The prediction model depends on the existing dataset schema and may require retraining if new features are added.
+- The assessment model depends on the existing dataset schema and may require retraining if new features are added.

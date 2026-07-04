@@ -1,7 +1,7 @@
-z"""
-predict.py - Prediction Utility Module
-This module provides prediction functions for testing and debugging.
-Note: Main prediction is handled in app.py
+"""
+assess.py - Assessment Utility Module
+This module provides churn assessment functions for testing and debugging.
+Note: Main assessment is handled in app.py
 """
 
 import os
@@ -13,7 +13,7 @@ from sklearn.preprocessing import StandardScaler
 
 class ChurnPredictor:
     """
-    Customer Churn Prediction Utility Class
+    Customer Churn Assessment Utility Class
     Used for testing and debugging purposes
     """
     
@@ -40,7 +40,7 @@ class ChurnPredictor:
     
     def load_model(self, model_path, artifacts_path):
         """
-        Load the trained model and artifacts
+        Load the trained assessment engine and artifacts
         """
         try:
             # Load model
@@ -52,9 +52,9 @@ class ChurnPredictor:
                     self.feature_names = model_data.get('feature_names')
                 else:
                     self.model = model_data
-                print(f"✅ Model loaded from {model_path}")
+                print(f"✅ Assessment engine loaded from {model_path}")
             else:
-                print(f"❌ Model not found at {model_path}")
+                print(f"❌ Assessment engine not found at {model_path}")
                 return False
             
             # Load artifacts if not already loaded
@@ -81,12 +81,12 @@ class ChurnPredictor:
             return True
             
         except Exception as e:
-            print(f"❌ Error loading model: {e}")
+            print(f"❌ Error loading assessment engine: {e}")
             return False
     
     def encode_features(self, data):
         """
-        Encode categorical features for prediction
+        Encode categorical features for assessment
         
         Args:
             data: Dictionary containing customer features
@@ -208,15 +208,15 @@ class ChurnPredictor:
             print(f"❌ Error encoding features: {e}")
             raise
     
-    def predict(self, data):
+    def assess(self, data):
         """
-        Make a prediction for a single customer
+        Make an assessment for a single customer
         
         Args:
             data: Dictionary containing customer features
         
         Returns:
-            Dictionary with prediction results
+            Dictionary with assessment results
         """
         try:
             # Encode features
@@ -228,7 +228,7 @@ class ChurnPredictor:
             else:
                 features_scaled = features
             
-            # Make prediction
+# Make assessment
             if self.model is not None:
                 prediction = self.model.predict(features_scaled)[0]
                 probability = self.model.predict_proba(features_scaled)[0]
@@ -248,20 +248,21 @@ class ChurnPredictor:
                     'status': churn_status,
                     'probability': round(churn_probability * 100, 2),
                     'confidence': round(confidence, 2),
-                    'prediction': int(prediction),
-                    'prediction_label': 'Churn' if prediction == 1 else 'Stay',
-                    'recommendation': recommendation
+                    'assessment': int(prediction),
+                    'assessment_label': 'Churn' if prediction == 1 else 'Stay',
+                    'recommendation': recommendation,
+                    'engine_used': self.model.__class__.__name__ if self.model else None
                 }
                 
                 return result
             else:
                 return {
                     'status': 'error',
-                    'message': 'Model not loaded'
+                    'message': 'Assessment engine not loaded'
                 }
                 
         except Exception as e:
-            print(f"❌ Prediction error: {e}")
+            print(f"❌ Assessment error: {e}")
             return {
                 'status': 'error',
                 'message': str(e)
@@ -269,17 +270,17 @@ class ChurnPredictor:
     
     def predict_batch(self, data_list):
         """
-        Make predictions for multiple customers
+        Make assessments for multiple customers
         
         Args:
             data_list: List of dictionaries containing customer features
         
         Returns:
-            List of prediction results
+            List of assessment results
         """
         results = []
         for data in data_list:
-            result = self.predict(data)
+            result = self.assess(data)
             results.append(result)
         return results
 
@@ -323,10 +324,10 @@ if __name__ == "__main__":
         for key, value in test_data.items():
             print(f"  {key}: {value}")
         
-        print("\n🔮 Making prediction...")
-        result = predictor.predict(test_data)
-        
-        print("\n📊 Prediction Result:")
+        print("\n🔮 Making assessment...")
+        result = predictor.assess(test_data)
+
+        print("\n📊 Assessment Result:")
         for key, value in result.items():
             print(f"  {key}: {value}")
         
