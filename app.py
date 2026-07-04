@@ -586,7 +586,7 @@ def model_info():
         'scaler_type': scaler.__class__.__name__ if scaler else None
     })
 
-@app.route('/api/predict/form')
+@app.route('/api/assessment/form')
 def assessment_form_schema():
     """
     Get the assessment form schema
@@ -616,6 +616,12 @@ def assessment_form_schema():
             {'name': 'total_charges', 'type': 'number', 'min': 0, 'step': 0.01, 'required': True}
         ]
     })
+
+
+# Backwards-compatible redirect from old endpoint
+@app.route('/api/predict/form')
+def legacy_prediction_form_redirect():
+    return jsonify({'redirect': '/api/assessment/form', 'note': 'Deprecated: use /api/assessment/form'}), 301
 
 # ==================== RUN APPLICATION ====================
 

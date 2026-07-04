@@ -74,6 +74,12 @@ http://127.0.0.1:5000
 - Result dashboard with risk insights
 - About and contact pages for supplemental content
 
+## API Endpoints
+
+- `GET /api/assessment/form` — Returns the assessment form schema (fields and types).
+- `GET /api/predict/form` — Deprecated; returns a 301 redirect to `/api/assessment/form`.
+
+
 ## Environment Variables
 
 The app can be configured with environment variables for deployment. Common values include:
